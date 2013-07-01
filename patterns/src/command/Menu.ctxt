@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=item\ key
+comment0.target=void\ addMenuItem(MenuItem,\ java.lang.String)
+comment1.params=key
+comment1.target=void\ selectMenuItem(java.lang.String)
+numComments=2

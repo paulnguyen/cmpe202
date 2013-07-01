@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GumballWorld()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ GumballWorld.\n\ \n
+comment1.params=
+comment1.target=void\ prepare()
+comment1.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\n\ objects\ and\ add\ them\ to\ the\ world.\n
+numComments=2

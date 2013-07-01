@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=c
+comment0.target=ConcreteDecoratorA(Component)
+comment1.params=
+comment1.target=java.lang.String\ operation()
+comment2.params=in
+comment2.target=java.lang.String\ addedBehavior(java.lang.String)
+numComments=3

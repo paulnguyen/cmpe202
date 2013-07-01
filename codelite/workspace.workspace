@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="workspace" Database="./workspace.tags">
+  <Project Name="gumball_c_ver1" Path="gumball_c_ver1/gumball_c_ver1.project" Active="No"/>
+  <Project Name="gumball_c_ver2" Path="gumball_c_ver2/gumball_c_ver2.project" Active="No"/>
+  <Project Name="gumball_c_ver3" Path="gumball_c_ver3/gumball_c_ver3.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="gumball_c_ver1" ConfigName="Debug"/>
+      <Project Name="gumball_c_ver2" ConfigName="Debug"/>
+      <Project Name="gumball_c_ver3" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="gumball_c_ver1" ConfigName="Release"/>
+      <Project Name="gumball_c_ver2" ConfigName="Release"/>
+      <Project Name="gumball_c_ver3" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=QueryResultsIterator\ createIterator()
+comment1.params=query
+comment1.target=void\ executeQuery(java.lang.String)
+numComments=2

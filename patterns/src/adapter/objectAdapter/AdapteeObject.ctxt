@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=msg
+comment0.target=void\ printMessage(java.lang.String)
+comment0.text=\n\ @see\ adapter.objectAdapter.Adaptee\#printMessage(java.lang.String)\n
+numComments=1

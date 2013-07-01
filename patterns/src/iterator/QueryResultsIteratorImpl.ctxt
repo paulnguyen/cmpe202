@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=r
+comment0.target=QueryResultsIteratorImpl(java.util.ArrayList)
+comment1.params=
+comment1.target=java.lang.String\ first()
+comment2.params=
+comment2.target=java.lang.String\ next()
+comment3.params=
+comment3.target=java.lang.String\ currentItem()
+comment4.params=
+comment4.target=boolean\ isDone()
+numComments=5

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=authToken
+comment0.target=java.lang.String\ readData(java.lang.String)
+comment0.text=\n\ @see\ proxy.SubjectProxy\#readData(java.lang.String)\n
+comment1.params=authToken\ data
+comment1.target=void\ writeData(java.lang.String,\ java.lang.String)
+comment1.text=\n\ @see\ proxy.SubjectProxy\#writeData(java.lang.String,\ java.lang.String)\n
+numComments=2

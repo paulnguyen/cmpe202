@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ first()
+comment1.params=
+comment1.target=java.lang.String\ next()
+comment2.params=
+comment2.target=java.lang.String\ currentItem()
+comment3.params=
+comment3.target=boolean\ isDone()
+numComments=4

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=vmm
+comment0.target=VmState(VirtualMachineManager)
+comment1.params=
+comment1.target=void\ doPowerOn()
+comment2.params=
+comment2.target=void\ doPowerOff()
+comment3.params=
+comment3.target=void\ doSuspend()
+comment4.params=
+comment4.target=void\ doReset()
+numComments=5

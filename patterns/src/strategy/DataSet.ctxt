@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DataSet()
+comment1.params=
+comment1.target=void\ doSort()
+comment2.params=
+comment2.target=void\ display()
+comment3.params=
+comment3.target=void\ resetData()
+comment4.params=s
+comment4.target=void\ changeStrategy(SortingStrategy)
+numComments=5

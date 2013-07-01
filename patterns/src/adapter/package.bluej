@@ -1,0 +1,21 @@
+#BlueJ package file
+package.editor.height=400
+package.editor.width=560
+package.editor.x=91
+package.editor.y=154
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+target1.height=62
+target1.name=classAdapter
+target1.type=PackageTarget
+target1.width=100
+target1.x=160
+target1.y=10
+target2.height=62
+target2.name=objectAdapter
+target2.type=PackageTarget
+target2.width=110
+target2.x=160
+target2.y=90

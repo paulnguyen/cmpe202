@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ doPowerOn()
+comment1.params=
+comment1.target=void\ doPowerOff()
+comment2.params=
+comment2.target=void\ doSuspend()
+comment3.params=
+comment3.target=void\ doReset()
+numComments=4

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RealSubject()
+comment1.params=
+comment1.target=java.lang.String\ readData()
+comment1.text=\n\ @see\ proxy.SubjectProxy\#readData(java.lang.String)\n
+comment2.params=data
+comment2.target=void\ writeData(java.lang.String)
+comment2.text=\n\ @see\ proxy.SubjectProxy\#writeData(java.lang.String,\ java.lang.String)\n
+numComments=3
