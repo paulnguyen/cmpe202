@@ -1,0 +1,10 @@
+.metadata
+.DS_Store
+*.class
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+springsource/Servers
+springsource/Servers/.settings/org.eclipse.wst.server.core.prefs
