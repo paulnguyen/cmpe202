@@ -8,3 +8,5 @@
 *.out
 springsource/Servers
 springsource/Servers/.settings/org.eclipse.wst.server.core.prefs
+*.session
+*.paul_nguyen
