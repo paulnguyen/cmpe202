@@ -1,0 +1,26 @@
+[Project]
+Language=java
+Root.0=$PROJECT_DIR$
+Root.0.access=writable
+Root.0.file_types=java_source;java_class
+Root.0.package_prefix=
+Root.1=/Volumes/Data/PROJECTS/sjsu/COURSES/202/handouts/9.9 - Starbucks Mobile App Simulator [Sample Solution]/diagrams
+Root.1.access=writable
+Root.1.file_types=diagram
+Root.1.package_prefix=
+Root.2=$TGH$/lib/javax.jar
+Root.2.access=import
+Version=3.0
+editor.bookmark.0=
+editor.bookmark.1=
+editor.bookmark.2=
+editor.bookmark.3=
+editor.bookmark.4=
+editor.bookmark.5=
+editor.bookmark.6=
+editor.bookmark.7=
+editor.bookmark.8=
+[model]
+alphaSort=true
+showDiagramContents=false
+showPackagesFirst=true

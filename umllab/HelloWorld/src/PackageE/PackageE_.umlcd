@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_NsCt4PNwEeKq790ffOAZPw">
+  <modelElement href="PackageE.uml#_NkbqAPNwEeKq790ffOAZPw"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_NuI_oPNwEeKq790ffOAZPw" name="PackageE">
+    <modelElement href="PackageE.uml#_NpxdAPNwEeKq790ffOAZPw"/>
+    <visualProperties xmi:id="_NuI_ofNwEeKq790ffOAZPw" position="50.0,50.0"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

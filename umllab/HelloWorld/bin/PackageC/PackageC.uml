@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_LH-rIPNvEeKq790ffOAZPw" name="PackageC">
+    <eAnnotations xmi:id="_LINUoPNvEeKq790ffOAZPw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_LINUofNvEeKq790ffOAZPw" source="codegen">
+        <details xmi:id="_LINUovNvEeKq790ffOAZPw" key="codegenDirectory" value="/HelloWorld/src"/>
+        <details xmi:id="_LPclEPNvEeKq790ffOAZPw" key="AssociatedSourceCode" value="/HelloWorld/src/PackageC/A.java;128725226/1;/HelloWorld/src/PackageC/B.java;2655295866/1;/HelloWorld/src/PackageC/C.java;942904014/1;/HelloWorld/src/PackageC/D.java;4254379072/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_LNSB4PNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_LNSB4fNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_LNSo8PNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_LNSo8fNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_LNSo8vNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_LNSo8_NvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_LNTQAPNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_LNTQAfNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_LNT3EPNvEeKq790ffOAZPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LNT3EfNvEeKq790ffOAZPw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LNUeIPNvEeKq790ffOAZPw" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LNgrYPNvEeKq790ffOAZPw" name="Collection"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LNVsQPNvEeKq790ffOAZPw" name="PackageC">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LNZWoPNvEeKq790ffOAZPw" name="A">
+        <ownedAttribute xmi:id="_LNjusPNvEeKq790ffOAZPw" name="x" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LNkVwPNvEeKq790ffOAZPw" name="y" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LNkVwfNvEeKq790ffOAZPw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LNk80fNvEeKq790ffOAZPw" name="b" visibility="private" type="_LNcZ8PNvEeKq790ffOAZPw" association="_LNoAIPNvEeKq790ffOAZPw">
+          <eAnnotations xmi:id="_LNk80_NvEeKq790ffOAZPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_LNlj4PNvEeKq790ffOAZPw" key="generic_container"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LNk80vNvEeKq790ffOAZPw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LNlj4vNvEeKq790ffOAZPw" name="c" visibility="private" type="_LNcZ8fNvEeKq790ffOAZPw" association="_LNpOQfNvEeKq790ffOAZPw"/>
+        <ownedAttribute xmi:id="_LNmK8fNvEeKq790ffOAZPw" name="d" visibility="private" type="_LNdBAPNvEeKq790ffOAZPw" association="_LNp1UfNvEeKq790ffOAZPw">
+          <eAnnotations xmi:id="_LNmK8_NvEeKq790ffOAZPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_LNmyAPNvEeKq790ffOAZPw" key="generic_container"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LNmK8vNvEeKq790ffOAZPw" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LNcZ8PNvEeKq790ffOAZPw" name="B"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LNcZ8fNvEeKq790ffOAZPw" name="C"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LNdBAPNvEeKq790ffOAZPw" name="D"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LNoAIPNvEeKq790ffOAZPw" name="" memberEnd="_LNoAIfNvEeKq790ffOAZPw _LNk80fNvEeKq790ffOAZPw">
+        <ownedEnd xmi:id="_LNoAIfNvEeKq790ffOAZPw" name="" type="_LNZWoPNvEeKq790ffOAZPw" association="_LNoAIPNvEeKq790ffOAZPw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LNpOQfNvEeKq790ffOAZPw" name="" memberEnd="_LNpOQvNvEeKq790ffOAZPw _LNlj4vNvEeKq790ffOAZPw">
+        <ownedEnd xmi:id="_LNpOQvNvEeKq790ffOAZPw" name="" type="_LNZWoPNvEeKq790ffOAZPw" association="_LNpOQfNvEeKq790ffOAZPw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LNp1UfNvEeKq790ffOAZPw" name="" memberEnd="_LNp1UvNvEeKq790ffOAZPw _LNmK8fNvEeKq790ffOAZPw">
+        <ownedEnd xmi:id="_LNp1UvNvEeKq790ffOAZPw" name="" type="_LNZWoPNvEeKq790ffOAZPw" association="_LNp1UfNvEeKq790ffOAZPw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_LIQX8PNvEeKq790ffOAZPw">
+      <eAnnotations xmi:id="_LIQ_APNvEeKq790ffOAZPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_LIQ_AfNvEeKq790ffOAZPw" base_Package="_LH-rIPNvEeKq790ffOAZPw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_LNh5gPNvEeKq790ffOAZPw" base_Element="_LNgrYPNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LNjusfNvEeKq790ffOAZPw" base_Element="_LNjusPNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:Array xmi:id="_LNkVwvNvEeKq790ffOAZPw" dimensions="1" base_Element="_LNkVwPNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LNk80PNvEeKq790ffOAZPw" base_Element="_LNkVwPNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LNlj4fNvEeKq790ffOAZPw" base_Element="_LNk80fNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LNmK8PNvEeKq790ffOAZPw" base_Element="_LNlj4vNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LNmyAfNvEeKq790ffOAZPw" base_Element="_LNmK8fNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:Reference xmi:id="_LNpOQPNvEeKq790ffOAZPw" base_Element="_LNoAIPNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:Reference xmi:id="_LNp1UPNvEeKq790ffOAZPw" base_Element="_LNpOQfNvEeKq790ffOAZPw"/>
+  <UMLLabProfile:Reference xmi:id="_LNrDcPNvEeKq790ffOAZPw" base_Element="_LNp1UfNvEeKq790ffOAZPw"/>
+</xmi:XMI>

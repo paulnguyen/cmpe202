@@ -1,0 +1,5 @@
+src.includes = src/
+src.excludes = src/tracing/lib/,\
+               src/tracing/version2/,\
+               src/tracing/version3/
+               

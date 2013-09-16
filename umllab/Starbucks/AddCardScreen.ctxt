@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=scr
+comment0.target=void\ setSettingsScreen(AppScreen)
+comment1.params=src
+comment1.target=void\ setCardsMainScreen(AppScreen)
+comment2.params=
+comment2.target=AddCardScreen()
+comment3.params=key
+comment3.target=void\ newKey(java.lang.String)
+comment4.params=
+comment4.target=void\ removeLastKey()
+comment5.params=key
+comment5.target=void\ keyPressed(java.lang.String)
+comment6.params=x\ y
+comment6.target=void\ touch(int,\ int)
+comment7.params=
+comment7.target=java.lang.String\ display()
+comment8.params=
+comment8.target=void\ topLeftCmd()
+comment9.params=
+comment9.target=void\ topRightCmd()
+numComments=10

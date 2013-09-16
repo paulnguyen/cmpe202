@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pin()
+comment1.params=
+comment1.target=Pin\ getInstance()
+comment2.params=
+comment2.target=boolean\ isAuthenticated()
+comment3.params=pinInput
+comment3.target=void\ validate(java.lang.String)
+numComments=4

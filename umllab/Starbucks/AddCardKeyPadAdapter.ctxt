@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=scr
+comment0.target=AddCardKeyPadAdapter(AddCardScreen)
+comment1.params=x\ y
+comment1.target=void\ touch(int,\ int)
+numComments=2
