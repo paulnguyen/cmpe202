@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=a\ lo0\ hi0
+comment0.target=void\ sort(int[],\ int,\ int)
+comment1.params=a
+comment1.target=void\ sort(int[])
+numComments=2
