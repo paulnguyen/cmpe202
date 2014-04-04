@@ -40,5 +40,7 @@ public class GumballWorld extends World
         GreenPicker greenpicker = new GreenPicker();
         addObject(greenpicker, 686, 454);
         greenpicker.setLocation(669, 456);
+        Boy boy = new Boy();
+        addObject(boy, 142, 414);
     }
 }

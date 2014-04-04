@@ -55,4 +55,11 @@ public class GumballStubTest
         m.turnCrank();
         assertEquals(false, m.hasGumball());
     }
+
+    @Test
+    public void test2()
+    {
+        assertEquals(false, m.hasGumball());
+    }
 }
+

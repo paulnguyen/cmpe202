@@ -8,5 +8,5 @@ comment2.target=void\ display()
 comment3.params=
 comment3.target=void\ resetData()
 comment4.params=s
-comment4.target=void\ changeStrategy(strategy.SortingStrategy)
+comment4.target=void\ changeStrategy(SortingStrategy)
 numComments=5

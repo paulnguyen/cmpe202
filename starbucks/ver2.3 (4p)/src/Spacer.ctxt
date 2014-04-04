@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ display()
+comment1.params=c
+comment1.target=void\ addSubComponent(IDisplayComponent)
+comment2.params=x\ y
+comment2.target=void\ touch(int,\ int)
+comment3.params=next
+comment3.target=void\ setNext(ITouchEventHandler)
+numComments=4

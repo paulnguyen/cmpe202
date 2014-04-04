@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=initial
+comment0.target=Frame(IScreen)
+comment1.params=slot\ s
+comment1.target=void\ setScreen(java.lang.String,\ IScreen)
+comment2.params=x\ y
+comment2.target=void\ touch(int,\ int)
+comment3.params=
+comment3.target=void\ display()
+comment4.params=c
+comment4.target=void\ cmd(java.lang.String)
+comment5.params=
+comment5.target=void\ selectA()
+comment6.params=
+comment6.target=void\ selectB()
+comment7.params=
+comment7.target=void\ selectC()
+comment8.params=
+comment8.target=void\ selectD()
+numComments=9

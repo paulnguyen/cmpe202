@@ -11,4 +11,6 @@ comment3.params=
 comment3.target=void\ testHappy()
 comment4.params=
 comment4.target=void\ noQuarter()
-numComments=5
+comment5.params=
+comment5.target=void\ test2()
+numComments=6
