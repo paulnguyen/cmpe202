@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=void\ touch(int,\ int)
+comment1.params=next
+comment1.target=void\ setNext(ITouchEventHandler)
+numComments=2

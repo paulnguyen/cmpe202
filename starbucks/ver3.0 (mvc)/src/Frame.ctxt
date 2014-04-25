@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=title
+comment0.target=Frame(java.lang.String)
+comment1.params=cmd
+comment1.target=void\ setButton(IActionCommand)
+comment2.params=input
+comment2.target=void\ enterInput(java.lang.String)
+comment3.params=
+comment3.target=void\ buttonClick()
+comment4.params=
+comment4.target=void\ display()
+numComments=5

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AppAuthProxy()
+comment1.params=
+comment1.target=void\ landscape()
+comment2.params=
+comment2.target=void\ portrait()
+comment3.params=x\ y
+comment3.target=void\ touch(int,\ int)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=c
+comment5.target=void\ execute(java.lang.String)
+comment6.params=
+comment6.target=void\ authEvent()
+numComments=7
