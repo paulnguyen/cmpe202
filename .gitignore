@@ -11,3 +11,10 @@ springsource/Servers
 springsource/Servers/.settings/org.eclipse.wst.server.core.prefs
 *.session
 *.paul_nguyen
+/jmonkey/BasicGame/nbproject/private/
+/jmonkey/BasicGame/build/
+/netbeans8/HelloWorld/nbproject/private/
+/netbeans8/HelloWorld/build/
+/jmonkey/JmeTests/nbproject/private/
+/jmonkey/JmeTests/build/
+/jmonkey/JmeTests/dist/
