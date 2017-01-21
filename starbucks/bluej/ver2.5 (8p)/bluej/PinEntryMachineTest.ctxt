@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PinEntryMachineTest()
+comment0.text=\n\ Default\ constructor\ for\ test\ class\ PinEntryMachineTest\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment2.params=
+comment2.target=void\ test0()
+comment3.params=
+comment3.target=void\ test1()
+comment4.params=
+comment4.target=void\ test2()
+comment5.params=
+comment5.target=void\ test3()
+comment6.params=
+comment6.target=void\ test4()
+comment7.params=
+comment7.target=void\ test5()
+comment8.params=
+comment8.target=void\ tearDown()
+comment8.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+numComments=9

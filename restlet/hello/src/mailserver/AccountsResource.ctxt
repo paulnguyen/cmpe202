@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ represent()
+comment0.text=\n\ Returns\ the\ list\ of\ accounts,\ each\ one\ on\ a\ separate\ line.\n\ \n\ @return\ The\ list\ of\ accounts.\n
+comment1.params=account
+comment1.target=java.lang.String\ add(java.lang.String)
+comment1.text=\n\ Add\ the\ given\ account\ to\ the\ list\ and\ returns\ its\ position\ as\ an\n\ identifier.\n\ \n\ @param\ account\n\ \ \ \ \ \ \ \ \ \ \ \ The\ account\ to\ add.\n\ @return\ The\ account\ identifier.\n
+numComments=2

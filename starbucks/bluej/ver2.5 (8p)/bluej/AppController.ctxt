@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AppController()
+comment1.params=
+comment1.target=void\ doAction()
+comment2.params=
+comment2.target=void\ doAction()
+comment3.params=
+comment3.target=void\ doAction()
+comment4.params=
+comment4.target=void\ doAction()
+comment5.params=
+comment5.target=void\ landscape()
+comment6.params=
+comment6.target=void\ portrait()
+comment7.params=x\ y
+comment7.target=void\ touch(int,\ int)
+comment8.params=
+comment8.target=void\ display()
+comment9.params=c
+comment9.target=void\ execute(java.lang.String)
+numComments=10

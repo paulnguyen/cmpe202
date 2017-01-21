@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.util.List\ getAccounts()
+comment0.text=\n\ Returns\ the\ static\ list\ of\ accounts\ stored\ in\ memory.\n\ \n\ @return\ The\ static\ list\ of\ accounts.\n
+comment1.params=
+comment1.target=java.lang.String\ represent()
+comment2.params=account
+comment2.target=java.lang.String\ add(java.lang.String)
+numComments=3

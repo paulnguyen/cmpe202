@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=m
+comment0.target=void\ setMessage(java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getMessage()
+numComments=2

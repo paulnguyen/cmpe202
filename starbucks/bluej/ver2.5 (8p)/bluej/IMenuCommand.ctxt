@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ execute()
+comment1.params=target
+comment1.target=void\ setReceiver(IMenuReceiver)
+numComments=2

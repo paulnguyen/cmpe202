@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GumballWorld
+comment0.text=\n\ Write\ a\ description\ of\ class\ GumballWorld\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=GumballWorld()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GumballWorld.\n\ \n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\n\ objects\ and\ add\ them\ to\ the\ world.\n
+numComments=3

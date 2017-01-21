@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=obj
+comment0.target=void\ attach(IKeyPadObserver)
+comment1.params=obj
+comment1.target=void\ removeObserver(IKeyPadObserver)
+comment2.params=
+comment2.target=void\ notifyObservers()
+numComments=3

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ represent()
+comment0.text=\n\ Represents\ the\ account\ as\ a\ simple\ string\ with\ the\ owner\ name\ for\ now.\n\ \n\ @return\ The\ account\ representation.\n
+comment1.params=account
+comment1.target=void\ store(java.lang.String)
+comment1.text=\n\ Stores\ the\ new\ value\ for\ the\ identified\ account.\n\ \n\ @param\ account\n\ \ \ \ \ \ \ \ \ \ \ \ The\ identified\ account.\n
+comment2.params=
+comment2.target=void\ remove()
+comment2.text=\n\ Deletes\ the\ identified\ account\ by\ setting\ its\ value\ to\ null.\n
+numComments=3

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=o
+comment0.target=void\ attachObserver(IObserver)
+comment1.params=o
+comment1.target=void\ detachObserver(IObserver)
+comment2.params=
+comment2.target=void\ notifyObservers()
+comment3.params=
+comment3.target=java.lang.String\ getData()
+numComments=4

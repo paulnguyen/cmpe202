@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Counter
+comment0.text=\n\ Write\ a\ description\ of\ class\ Counter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Counter()
+comment2.params=amount
+comment2.target=void\ bumpCount(int)
+comment2.text=\n\ Increase\ the\ total\ amount\ displayed\ on\ the\ counter,\ by\ a\ given\ amount.\n
+numComments=3

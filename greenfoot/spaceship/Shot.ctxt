@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Shot
+comment0.text=\n\ A\ bullet\ to\ be\ shot\ at\ asteroids.\n\ \n\ The\ Shot\ moves\ to\ the\ top\ of\ the\ screen\ and\ then\ expires.\ If\ it\ hits\ an\ asteroid\n\ on\ the\ way,\ it\ destroys\ the\ asteroid,\ and\ then\ expires\ immediately.\n
+comment1.params=myShip
+comment1.target=Shot(Rocket)
+comment1.text=\n\ Constructor\ for\ a\ Shot.\ You\ must\ specify\ the\ ship\ the\ shot\ comes\ from.\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ Shot\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=void\ hitAnAsteroid()
+comment3.text=\n\ This\ method\ gets\ called\ (from\ the\ act\ method,\ above)\ when\ the\ shot\ hits\ an\n\ asteroid.\ It\ needs\ to\ do\ only\ one\ thing\:\ increase\ the\ score\ counter.\n\ (Everything\ else,\ such\ as\ removing\ the\ asteroid\ which\ was\ hit,\ is\ dealt\n\ with\ in\ the\ act\ method).\n
+numComments=4

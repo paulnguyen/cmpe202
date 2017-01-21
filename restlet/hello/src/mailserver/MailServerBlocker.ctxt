@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=context
+comment0.target=MailServerBlocker(org.restlet.Context)
+comment0.text=\n\ Constructor.\n\ \n\ @param\ context\n\ \ \ \ \ \ \ \ \ \ \ \ The\ parent\ context.\n
+comment1.params=request\ response
+comment1.target=int\ beforeHandle(org.restlet.Request,\ org.restlet.Response)
+comment1.text=\n\ Pre-processing\ method\ testing\ if\ the\ client\ IP\ address\ is\ in\ the\ set\ of\n\ blocked\ addresses.\n
+comment2.params=
+comment2.target=java.util.Set\ getBlockedAddresses()
+comment2.text=\n\ Returns\ the\ modifiable\ set\ of\ blocked\ IP\ addresses.\n\ \n\ @return\ The\ modifiable\ set\ of\ blocked\ IP\ addresses.\n
+numComments=3

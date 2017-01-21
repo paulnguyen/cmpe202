@@ -1,0 +1,24 @@
+#BlueJ package file
+objectbench.height=76
+objectbench.width=965
+package.editor.height=534
+package.editor.width=857
+package.editor.x=317
+package.editor.y=171
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=false
+project.charset=US-ASCII
+target1.height=62
+target1.name=org
+target1.type=PackageTarget
+target1.width=80
+target1.x=190
+target1.y=10
+target2.height=62
+target2.name=gumball
+target2.type=PackageTarget
+target2.width=90
+target2.x=90
+target2.y=10

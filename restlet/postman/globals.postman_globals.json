@@ -1,0 +1,57 @@
+{
+  "id": "79150daa-d057-393b-0365-699a7a449ec1",
+  "name": "Postman Globals",
+  "values": [
+    {
+      "enabled": true,
+      "key": "host",
+      "type": "text",
+      "value": "aws.nguyenresearch.com"
+    },
+    {
+      "enabled": true,
+      "key": "port",
+      "type": "text",
+      "value": "8181"
+    },
+    {
+      "key": "aws_host",
+      "value": "aws.nguyenresearch.com",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "aws_port",
+      "value": "8181",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "local_host",
+      "value": "localhost",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "local_port",
+      "value": "8080",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "docker_host",
+      "value": "192.168.99.100",
+      "type": "text",
+      "enabled": true
+    },
+    {
+      "key": "docker_port",
+      "value": "8080 or 80",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2016-10-15T06:57:22.565Z",
+  "_postman_exported_using": "Postman/4.8.0"
+}

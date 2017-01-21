@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\n\ Launches\ the\ application\ with\ an\ HTTP\ server.\n\ \n\ @param\ args\n\ \ \ \ \ \ \ \ \ \ \ \ The\ arguments.\n\ @throws\ Exception\n
+comment1.params=
+comment1.target=EchoServer()
+comment1.text=\n\ Constructor.\n
+comment2.params=
+comment2.target=org.restlet.Restlet\ createInboundRoot()
+comment2.text=\n\ Creates\ a\ root\ Restlet\ to\ trace\ requests.\n
+comment3.params=request\ response
+comment3.target=void\ handle(org.restlet.Request,\ org.restlet.Response)
+numComments=4

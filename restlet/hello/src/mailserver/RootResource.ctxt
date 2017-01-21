@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ represent()
+comment0.text=\n\ Represents\ the\ application\ root\ with\ a\ welcome\ message.\n\ \n\ @return\ The\ root\ representation.\n
+numComments=1

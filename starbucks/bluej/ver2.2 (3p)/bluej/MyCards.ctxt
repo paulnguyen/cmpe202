@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyCards()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MyCards\n
+comment1.params=y
+comment1.target=int\ sampleMethod(int)
+comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
+numComments=2

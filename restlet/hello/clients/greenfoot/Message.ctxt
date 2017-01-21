@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Message
+comment0.text=\n\ Write\ a\ description\ of\ class\ Message\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Message()
+comment2.params=msg
+comment2.target=void\ setText(java.lang.String)
+comment3.params=
+comment3.target=void\ act()
+numComments=4

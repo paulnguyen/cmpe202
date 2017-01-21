@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=obj
+comment0.target=void\ registerObserver(IPinAuthObserver)
+comment1.params=obj
+comment1.target=void\ removeObserver(IPinAuthObserver)
+comment2.params=
+comment2.target=void\ notifyObserver()
+numComments=3

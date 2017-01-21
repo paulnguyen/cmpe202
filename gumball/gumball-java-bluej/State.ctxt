@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ insertQuarter()
+comment1.params=
+comment1.target=void\ ejectQuarter()
+comment2.params=
+comment2.target=void\ turnCrank()
+comment3.params=
+comment3.target=void\ dispense()
+numComments=4
