@@ -1,0 +1,29 @@
+package textuml1; 
+
+import mdd_types;
+
+class Product
+  attribute description : String;
+  attribute available : Integer;
+  attribute price : Double;
+end;
+
+class Cart
+  attribute name : String ;
+  attribute desc : String ;
+end;
+
+class CartItem
+end;
+
+association CartItemProduct
+  role item : CartItem[*];
+  navigable role product : Product[1]; 
+end;
+
+aggregation CartHasItems
+  navigable role item : CartItem[*];
+  navigable role cart : Cart[1];      
+end;
+
+end.

@@ -1,0 +1,13 @@
+package textuml2 ;
+
+import mdd_types;
+
+class hello
+
+end ;
+
+class world
+
+end ;
+  
+end.
