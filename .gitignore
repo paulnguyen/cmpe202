@@ -2,6 +2,7 @@ out
 .metadata
 .DS_Store
 *.class
+*.ctxt
 *~
 *.lock
 *.DS_Store
