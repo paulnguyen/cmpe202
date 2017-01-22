@@ -1,10 +1,12 @@
 clean:
 	rm -f *.png *.svg
 
+run:
+	java -Dzanthan.prefs=diagram.preferences -jar sequence-10.0.jar
+
 blackbox:
-	java -jar sequence-10.0.jar --headless blackbox.seq
+	java -Dzanthan.prefs=diagram.preferences -jar sequence-10.0.jar --headless blackbox.seq
 	
 example:
-	java -jar sequence-10.0.jar --headless example.seq
+	java -Dzanthan.prefs=diagram.preferences -jar sequence-10.0.jar --headless example.seq
 
-	
