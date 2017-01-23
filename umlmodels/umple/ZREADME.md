@@ -1,10 +1,8 @@
 
-# UMLGraph 
+# UMPLE Model-Oriented Programming 
 
 	Merging Modeling with Programming
 	http://cruise.eecs.uottawa.ca/umple/
-	
-**Model-Oriented Programming - Umple.org**
 
 Umple is a modeling tool and programming language family to enable what we call Model-Oriented Programming. It adds abstractions such as Associations, Attributes and State Machines derived from UML to object-oriented programming languages such as Java, C++, PHP and Ruby. Umple can also be used to create UML class and state diagrams textually.
 
