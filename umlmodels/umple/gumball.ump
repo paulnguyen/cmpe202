@@ -1,0 +1,73 @@
+
+
+interface State  
+{
+  public void insertQuarter() {}
+  public void ejectQuarter() {}
+  public void turnCrank() {}
+  public void dispense() {}
+}
+
+class SoldOutState 
+{
+  isA State ;
+}
+
+class SoldState
+{
+  isA State ;
+}
+
+class HasQuarterState
+{
+  isA State ;
+}
+
+class NoQuarterState
+{
+  isA State ;
+}
+
+class GumballMachine
+{
+  // attributes
+  internal Integer count ; 
+  // associations
+  1 -> * State ;
+  // methods
+  public void insertQuarter() {} 
+  public void ejectQuarter() {} 
+  public void turnCrank() {}
+  public void dispense() {}
+  protected void setState( State state ) {}
+  protected void releaseBall() {}
+  protected int getCount() {}
+  protected refill( int count ) {}
+  public State getSoldOutState() {}
+  public State getNoQuarterState() {}
+  public State getHasQuarterState() {}
+  public State getSoldState() {}
+
+  state {  
+      NoQuarterState { 
+        insertQuarter -> HasQuarterState ;  
+      }  
+      HasQuarterState {  
+          ejectQuarter -> NoQuarterState ;  
+          turnCrank -> SoldState ;  
+      }  
+      SoldState { 
+        dispense [count > 0] -> NoQuarterState ; 
+        dispense [count <= 0] -> SoldOutState ; 
+      }  
+      SoldOutState {   
+      }  
+  }
+}
+
+
+
+
+
+
+

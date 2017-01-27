@@ -1,0 +1,7 @@
+
+
+Customer {
+  System."The customer selects to reserve a room." -> "The system displays the type of rooms the hotel has and their respective rates."  ;
+  System."The customer checks room cost for a desired room type and period of stay." -> "The system computes the cost and displays the information to the customer." ;
+  System."The customer makes the reservation for the chosen room(s)." -> "The system reserves the room for the customer and displays the reservation with a confirmation number and check-in instructions." ;
+}

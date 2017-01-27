@@ -28,7 +28,16 @@ class OrderLine
 
 class Product
 {
-   // empty
+    isA IPriceObserver ;
+}
+
+interface IPriceObserver  
+{
+}
+
+class TaxCalc 
+{
+    depend IPriceObserver ;
 }
 
 class Customer
