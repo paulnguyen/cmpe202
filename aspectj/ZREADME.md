@@ -17,7 +17,7 @@
     creating: aspectj1.8/bin/
     inflating: aspectj1.8/bin/aj 
     ...
-## Install Java 7 JDK
+## Install Java 7 JDK (Not needed if JDK 7 or 8 Already Installed)
 
     sudo apt-get update
     sudo apt-get install openjdk-7-jdk
