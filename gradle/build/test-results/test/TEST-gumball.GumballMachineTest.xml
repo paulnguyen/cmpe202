@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gumball.GumballMachineTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-02-05T07:28:11" hostname="macbox.local" time="0.002">
+  <properties/>
+  <testcase name="testHappy" classname="gumball.GumballMachineTest" time="0.001"/>
+  <testcase name="noQuarter" classname="gumball.GumballMachineTest" time="0.0"/>
+  <system-out><![CDATA[Thanks for your quarter.  Gumball Ejected!
+Please insert a quarter
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+#BlueJ package file
+package.editor.height=400
+package.editor.width=560
+package.editor.x=39
+package.editor.y=347
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+target1.height=62
+target1.name=state
+target1.type=PackageTarget
+target1.width=80
+target1.x=70
+target1.y=10
+target2.height=62
+target2.name=gumball
+target2.type=PackageTarget
+target2.width=80
+target2.x=160
+target2.y=10
