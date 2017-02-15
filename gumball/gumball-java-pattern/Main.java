@@ -1,6 +1,6 @@
 
 
-public class GumballMachineTestDrive {
+public class Main {
 
 	public static void main(String[] args) {
 		GumballMachine gumballMachine = new GumballMachine(5);
