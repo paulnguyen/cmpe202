@@ -28,9 +28,9 @@ public class Frame
                 System.out.println( " [A][B][C][D]" ) ;
             }         
             public void selectA() { menuA.invoke() ; }
-            public void selectB() { menuA.invoke() ; }
-            public void selectC() { menuA.invoke() ; }
-            public void selectD() { menuA.invoke() ; }
+            public void selectB() { menuB.invoke() ; }
+            public void selectC() { menuC.invoke() ; }
+            public void selectD() { menuD.invoke() ; }
         } ;
 
         landscapeStrategy = new IOrientationStrategy() 
