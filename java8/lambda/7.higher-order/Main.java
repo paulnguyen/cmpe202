@@ -5,14 +5,14 @@ import java.util.function.*;
 
 public class Main {
 
-	/**
+	/*
 		FROM:  Core Java® for the Impatient
 	
 		Suppose sometimes we want to sort an array of strings in ascending order 
 		and other times in descending order. We can make a method that produces 
 		the correct comparator:   
 		
-	**/	
+	*/	
 	    
 
     public static Comparator<String> compareInDirecton(int direction) {

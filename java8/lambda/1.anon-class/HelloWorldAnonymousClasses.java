@@ -1,5 +1,5 @@
 
-/**
+/*
 
 	https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
 
@@ -32,7 +32,7 @@
 	However, you cannot declare constructors in an anonymous class.
 
 
-**/
+*/
 
 
 public class HelloWorldAnonymousClasses {

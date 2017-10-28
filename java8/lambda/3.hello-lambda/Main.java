@@ -31,7 +31,7 @@ public class Main {
           
 }
 
-/**
+/*
 
 	https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
 	https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html
@@ -47,5 +47,5 @@ public class Main {
         This is a functional interface and can therefore be used as 
         the assignment target for a lambda expression or method reference. 	
 
-**/
+*/
 

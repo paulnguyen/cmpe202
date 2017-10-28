@@ -27,7 +27,7 @@ public class Main {
 
 }
 
-/**
+/*
 	FROM:  Core Java® for the Impatient
 
 	A Lambda Expression Has:
@@ -42,4 +42,4 @@ public class Main {
 	The technical term for a block of code together with the values of free variables 
 	is a closure. In Java, lambda expressions are closures.    
 
-**/
+*/
