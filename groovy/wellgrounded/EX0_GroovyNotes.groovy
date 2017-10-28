@@ -1,5 +1,5 @@
 
-/**
+/*
 
 Default Groovy Imports:
 
@@ -36,5 +36,25 @@ Groovy Style Guide:
 
 http://groovy-lang.org/style-guide.html
 
-**/
+*/
+
+
+
+/* 
+
+Sublime 3 Setup:
+
+/Users/pnguyen/Library/Application Support/Sublime Text 3/Packages/User
+
+Run groovy script from sublime text 3 Tools -> Build System -> New Build System, Paste below and save as groovy.sublime-build
+
+groovy.sublime.-build
+{
+	"cmd": ["groovy","$file"],
+	"selector": "source.groovy",
+	"file_regex": "[ ]*at .+[(](.+):([0-9]+)[)]",
+}
+
+*/
+
 

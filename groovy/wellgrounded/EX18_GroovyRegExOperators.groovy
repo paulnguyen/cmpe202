@@ -1,5 +1,5 @@
 
-/**
+/*
 
 Groovy Notation & Java equivalent
 
@@ -16,7 +16,7 @@ ALSO:
 
 http://groovy.jmiguel.eu/groovy.codehaus.org/Tutorial+5+-+Capturing+regex+groups.html
 
-**/
+*/
 
 import java.util.regex.*
 

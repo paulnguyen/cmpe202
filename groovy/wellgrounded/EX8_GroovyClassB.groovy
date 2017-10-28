@@ -1,4 +1,5 @@
 
+// Groovy Class
 
 class EX8_GroovyClassB
 {

@@ -15,12 +15,12 @@ def varX ; // dynamic type
 String varY ; // static type
 
 
-/**
+/*
 
 REF:  http://docs.groovy-lang.org/latest/html/api/groovy/lang/MetaClass.html
       http://blog.cacoethes.co.uk/groovyandgrails/a-couple-of-notes-about-groovy-syntax
 
-**/
+*/
 
 
 

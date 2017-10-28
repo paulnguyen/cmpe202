@@ -1,11 +1,11 @@
 
-/**
+/*
 
 1.  Groovy treats == as the equivalent of the equals() method in Java.
 2.	To Check for object identity equality, use Groovy’s built-in is() 
 3. 	Can use == when checking to see if an object is null
 
-**/
+*/
 
 Integer x = new Integer(2)
 Integer y = new Integer(2)

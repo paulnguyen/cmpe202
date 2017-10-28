@@ -1,5 +1,5 @@
 
-/**
+/*
  
 Groovy script has two scopes:
 
@@ -8,7 +8,7 @@ local	— variables are scoped locally to the block that they’re declared in.
 
 Methods declared in a script don’t have access to the local scope. 
 
-**/
+*/
 
 String hello = "Hello";  // defined variable of String type (local Scope)
 
@@ -21,7 +21,7 @@ void checkHello()
 checkHello() ;
 
 
-/**
+/*
 
 groovyc EX5_GroovyLocalScope.groovy 
 javap -private -l EX5_GroovyLocalScope
@@ -47,6 +47,6 @@ where options include:
    -verbose                  Print stack size, number of locals and args for methods
                              If verifying, print reasons for failure
 
-**/
+*/
 
  

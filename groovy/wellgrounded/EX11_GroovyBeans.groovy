@@ -1,10 +1,10 @@
-/**
+/*
 
 GroovyBeans are much like JavaBeans, except they omit the explicit 
 getters and setters, provide auto constructors, and allow you to 
 reference member variables using dot (.) notation.
 
-**/
+*/
 
 
 import groovy.transform.Immutable

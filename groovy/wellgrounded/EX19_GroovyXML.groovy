@@ -1,5 +1,5 @@
 
-/**
+/*
 
 Using Groovy Builders:
 
@@ -9,7 +9,7 @@ Using Groovy Builders:
 </person>
 
 
-**/
+*/
 
 import groovy.xml.*
 

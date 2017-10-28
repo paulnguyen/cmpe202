@@ -1,6 +1,5 @@
 
-/**
-
+/*
 
 Using Groovy Builders:
 
@@ -12,7 +11,7 @@ Using Groovy Builders:
     }
 }
 
-**/
+*/
 
 import groovy.json.*
 

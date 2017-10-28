@@ -2,13 +2,15 @@ all: clean
 
 clean: 
 	find . -name "*.class" -exec rm -rf {} \;
-	
-ex8:
-	groovyc EX8*.groovy
-	groovy -cp . EX8_GroovyClassTest.groovy
+
+compile:
+	groovyc $(src)
+
+run:
+	groovy $(src)
 
 debug:
-	javap -private -l EX8_GroovyClassA
+	javap -private -l $(class)
 
 	
 	

@@ -1,5 +1,5 @@
 
-/**
+/*
  
 Groovy script has two scopes:
 
@@ -12,7 +12,7 @@ REF:
     http://groovy-lang.org/style-guide.HTML
     http://groovy.jmiguel.eu/groovy.codehaus.org/Scoping+and+the+Semantics+of+%22def%22.html
 
-**/
+*/
 
 def msg "Message" ; // declare variable in local scope
 hello = "Hello";  // defined variable of String type (binding scope)
@@ -26,7 +26,7 @@ void checkHello()
 checkHello() ;
 
 
-/**
+/*
 
 groovyc EX6_GroovyBindingScope.groovy 
 javap -private -l EX6_GroovyBindingScope
@@ -52,6 +52,6 @@ where options include:
    -verbose                  Print stack size, number of locals and args for methods
                              If verifying, print reasons for failure
 
-**/
+*/
 
  

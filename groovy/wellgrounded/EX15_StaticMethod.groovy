@@ -1,4 +1,8 @@
 
+/* 
+	Static Methods in Groovy
+*/
+
 class StringUtils
 {
 	static String sayHello(String name)

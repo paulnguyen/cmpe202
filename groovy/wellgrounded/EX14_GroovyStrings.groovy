@@ -1,7 +1,8 @@
-/**
+
+/*
 	Strings can contain Groovy Expressions (i.e. ${ })
 
-**/
+*/
 
 String name = 'Gweneth'
 def x = 2

@@ -1,6 +1,6 @@
 
 /*
-**  http://groovy-lang.org/closures.html
+	http://groovy-lang.org/closures.html
 */
 
 greeting = 'Hello'
