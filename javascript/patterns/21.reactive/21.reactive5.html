@@ -1,0 +1,70 @@
+
+<!--
+
+	http://reactivex.io/rxjs/manual/overview.html
+
+	Values
+
+	You can transform the values passed through your observables.
+
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.2/Rx.js"></script>
+
+
+<!-- Let's start with a brief piece of HTML:  -->
+
+<body>
+  <button id="button1"> Button #1</button> 
+  &nbsp;&nbsp;
+  <button id="button2"> Button #2</button>
+  <br/>
+  <hr/>
+  <textarea id="textarea" style="height: 300px; width: 400px"></textarea>
+</body>
+
+<script>
+	var textArea = document.querySelector('#textarea');
+	function log(msg) {
+		textArea.value += msg + "\n"	
+	}
+</script>
+
+<!--
+	Here's how you can add the current mouse x position 
+	for every click, in plain JavaScript:
+-->
+
+<script>
+	var count = 0;
+	var rate = 1000;
+	var lastClick = Date.now() - rate;
+	var button1 = document.querySelector('#button1');
+	button1.addEventListener('click', (event) => {
+	  if (Date.now() - lastClick >= rate) {
+	    count += event.clientX;
+	    log(count)
+	    lastClick = Date.now();
+	  }
+	});
+</script>
+
+
+<!--
+	With RxJS:
+
+    Note: 	Other value producing operators are 
+    		pluck, pairwise, sample etc.
+
+-->
+
+<script>
+
+	var button2 = document.querySelector('#button2');
+	Rx.Observable.fromEvent(button2, 'click')
+	  .throttleTime(1000)
+	  .map(event => event.clientX)
+	  .scan((count, clientX) => count + clientX, 0)
+	  .subscribe(count => log(count));
+
+</script>
