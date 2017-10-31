@@ -1,0 +1,70 @@
+
+<!--
+
+	http://reactivex.io/rxjs/manual/overview.html
+
+	Flow
+
+	RxJS has a whole range of operators that helps you control how the events
+	flow through your observables.
+
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.2/Rx.js"></script>
+
+
+<!-- Let's start with a brief piece of HTML:  -->
+
+<body>
+  <button id="button1"> Button #1</button> 
+  &nbsp;&nbsp;
+  <button id="button2"> Button #2</button>
+  <br/>
+  <hr/>
+  <textarea id="textarea" style="height: 300px; width: 400px"></textarea>
+</body>
+
+<script>
+	var textArea = document.querySelector('#textarea');
+	function log(msg) {
+		textArea.value += msg + "\n"	
+	}
+</script>
+
+<!--
+	This is how you would allow at most one click per second, with plain
+	JavaScript:
+-->
+
+<script>
+	var count = 0;
+	var rate = 1000;
+	var lastClick = Date.now() - rate;
+	var button1 = document.querySelector('#button1');
+	button1.addEventListener('click', () => {
+	  if (Date.now() - lastClick >= rate) {
+	    log(`Clicked ${++count} times`);
+	    lastClick = Date.now();
+	  }
+	});
+</script>
+
+
+<!--
+	With RxJS:
+
+    Note: 	Other flow control operators are: 
+    		filter, delay, debounceTime, take, 
+    		takeUntil, distinct, distinctUntilChanged etc. 
+
+-->
+
+<script>
+
+	var button2 = document.querySelector('#button2');
+	Rx.Observable.fromEvent(button2, 'click')
+	  .throttleTime(1000)
+	  .scan(count => count + 1, 0)
+	  .subscribe(count => log(`Clicked ${count} times`));
+
+</script>

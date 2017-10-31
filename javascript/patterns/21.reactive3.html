@@ -1,0 +1,67 @@
+
+<!--
+
+	http://reactivex.io/rxjs/manual/overview.html
+
+	Purity
+
+	What makes RxJS powerful is its ability to produce values using pure
+	functions. That means your code is less prone to errors.
+
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.all.js"></script>
+
+
+<!-- Let's start with a brief piece of HTML:  -->
+
+<body>
+  <button id="button1"> Button #1</button> 
+  &nbsp;&nbsp;
+  <button id="button2"> Button #2</button>
+  <br/>
+  <hr/>
+  <textarea id="textarea" style="height: 300px; width: 400px"></textarea>
+</body>
+
+<script>
+	var textArea = document.querySelector('#textarea');
+	function log(msg) {
+		textArea.value += msg + "\n"	
+	}
+</script>
+
+<!-- 
+	Normally you would create an impure function, where other pieces of your
+	code can mess up your state.
+-->
+
+<script>
+
+	var button1 = document.querySelector('#button1');
+	var count = 0;
+	button1.addEventListener('click', () => log(`Clicked Button #1 ${++count} times`) );
+
+</script>
+
+
+<!--
+	Using RxJS you isolate the state.
+-->
+
+<script>
+
+	var button2 = document.querySelector('#button2');
+	Rx.Observable.fromEvent(button2, 'click')
+	  .scan(count => count + 1, 0)
+	  .subscribe(count => log( `Clicked Button #2 ${count++} times`) );
+
+</script>
+
+<!--
+
+	The scan operator works just like reduce for arrays. It takes a value
+	which is exposed to a callback. The returned value of the callback will
+	then become the next value exposed the next time the callback runs.
+
+-->

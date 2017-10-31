@@ -1,0 +1,44 @@
+
+<!--
+
+	https://www.safaribooksonline.com/library/view/mastering-javascript-design
+	http://reactivex.io/rxjs/manual/overview.html
+
+	Within an application we can think of all the events happening as a similar
+	stream of events. The user clicks on a button? Event. The user mouse 
+	enters some region? Event. A clock ticks? Event. In both front and backend
+	applications, events are the things which trigger changes in state. You are
+	likely already using events for event listeners. Consider attaching a click
+	handler to a button:
+
+	Normally you register event listeners.
+
+	var button = document.querySelector('button');
+	button.addEventListener('click', () => console.log('Clicked!'));
+
+-->
+
+
+<body>
+<form action="javascript:void(0);">
+	  First name:<br>
+	  <input type="text" name="firstname" value="Mickey">
+	  <br>
+	  Last name:<br>
+	  <input type="text" name="lastname" value="Mouse">
+	  <br><br>
+	  <input id="button" type="submit" value="Submit">
+</form> 
+</body>
+
+
+<script>
+	var item = document.getElementById("button");
+	item.addEventListener("click", 
+		function(event){ 
+			alert("clicked!")
+	  }
+	);
+</script>
+
+

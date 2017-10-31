@@ -1,0 +1,56 @@
+
+<!--
+
+	http://jsfiddle.net/rniemeyer/bxfXd/
+
+	Knockout.js Example
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Knockout Example</title>
+	<script type="text/javascript" src="http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+	<style>
+		body { font-family: arial; font-size: 14px; }
+		.liveExample { padding: 1em; background-color: #EEEEDD; border: 1px solid #CCC; max-width: 655px; }
+		.liveExample input { font-family: Arial; }
+		.liveExample b { font-weight: bold; }
+		.liveExample p { margin-top: 0.9em; margin-bottom: 0.9em; }
+		.liveExample select[multiple] { width: 100%; height: 8em; }
+		.liveExample h2 { margin-top: 0.4em; }
+	</style>
+</head>
+<body>
+
+<div class='liveExample'> 
+<form data-bind="submit: addItem">
+    New item:
+    <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
+    <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+    <p>Your items:</p>
+    <select multiple="multiple" width="50" data-bind="options: items"> </select>
+</form>
+</div>
+
+</body>
+</html>
+
+<script>
+
+	var SimpleListModel = function(items) {
+	    this.items = ko.observableArray(items);
+	    this.itemToAdd = ko.observable("");
+	    this.addItem = function() {
+	        if (this.itemToAdd() != "") {
+	            this.items.push(this.itemToAdd()); // Adds the item. Writing to the "items" observableArray causes any associated UI to update.
+	            this.itemToAdd(""); // Clears the text box, because it's bound to the "itemToAdd" observable
+	        }
+	    }.bind(this);  // Ensure that "this" is always this view model
+	};
+	 
+	ko.applyBindings(new SimpleListModel(["Alpha", "Beta", "Gamma"]));
+
+</script>
+
