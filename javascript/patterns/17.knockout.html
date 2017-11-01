@@ -1,9 +1,9 @@
 
 <!--
 
-	http://jsfiddle.net/rniemeyer/bxfXd/
+	http://learn.knockoutjs.com/#/?tutorial=intro
 
-	Knockout.js Example
+	Knockout.js Tutorial Example
 
 -->
 
@@ -25,13 +25,18 @@
 <body>
 
 <div class='liveExample'> 
-<form data-bind="submit: addItem">
-    New item:
-    <input data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' />
-    <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
-    <p>Your items:</p>
-    <select multiple="multiple" width="50" data-bind="options: items"> </select>
-</form>
+	<p>First name: <strong>todo</strong></p>
+	<p>Last name: <strong>todo</strong></p>
+
+	<p>First name: <strong data-bind="text: firstName"></strong></p>
+	<p>Last name: <strong data-bind="text: lastName"></strong></p>
+
+	<p>First name: <input data-bind="value: firstName" /></p>
+	<p>Last name: <input data-bind="value: lastName" /></p>
+
+	<p>Full name: <strong data-bind="text: fullName"></strong></p>
+
+	<button data-bind="click: capitalizeLastName">Go caps</button>
 </div>
 
 </body>
@@ -39,18 +44,21 @@
 
 <script>
 
-	var SimpleListModel = function(items) {
-	    this.items = ko.observableArray(items);
-	    this.itemToAdd = ko.observable("");
-	    this.addItem = function() {
-	        if (this.itemToAdd() != "") {
-	            this.items.push(this.itemToAdd()); // Adds the item. Writing to the "items" observableArray causes any associated UI to update.
-	            this.itemToAdd(""); // Clears the text box, because it's bound to the "itemToAdd" observable
-	        }
-	    }.bind(this);  // Ensure that "this" is always this view model
-	};
-	 
-	ko.applyBindings(new SimpleListModel(["Alpha", "Beta", "Gamma"]));
+	// This is a simple *viewmodel* - JavaScript that defines the data and behavior of your UI
+	function AppViewModel() {
+	    this.firstName = ko.observable("Bert");
+	    this.lastName = ko.observable("Bertington");
+	    this.fullName = ko.computed(function() {
+	        return this.firstName() + " " + this.lastName();    
+	    }, this);
+	    this.capitalizeLastName = function() {
+	        var currentVal = this.lastName();        // Read the current value
+	        this.lastName(currentVal.toUpperCase()); // Write back a modified value
+	    };
+	}
+
+	// Activates knockout.js
+	ko.applyBindings(new AppViewModel());
 
 </script>
 
