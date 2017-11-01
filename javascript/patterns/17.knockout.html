@@ -1,0 +1,64 @@
+
+<!--
+
+	http://learn.knockoutjs.com/#/?tutorial=intro
+
+	Knockout.js Tutorial Example
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Knockout Example</title>
+	<script type="text/javascript" src="http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+	<style>
+		body { font-family: arial; font-size: 14px; }
+		.liveExample { padding: 1em; background-color: #EEEEDD; border: 1px solid #CCC; max-width: 655px; }
+		.liveExample input { font-family: Arial; }
+		.liveExample b { font-weight: bold; }
+		.liveExample p { margin-top: 0.9em; margin-bottom: 0.9em; }
+		.liveExample select[multiple] { width: 100%; height: 8em; }
+		.liveExample h2 { margin-top: 0.4em; }
+	</style>
+</head>
+<body>
+
+<div class='liveExample'> 
+	<p>First name: <strong>todo</strong></p>
+	<p>Last name: <strong>todo</strong></p>
+
+	<p>First name: <strong data-bind="text: firstName"></strong></p>
+	<p>Last name: <strong data-bind="text: lastName"></strong></p>
+
+	<p>First name: <input data-bind="value: firstName" /></p>
+	<p>Last name: <input data-bind="value: lastName" /></p>
+
+	<p>Full name: <strong data-bind="text: fullName"></strong></p>
+
+	<button data-bind="click: capitalizeLastName">Go caps</button>
+</div>
+
+</body>
+</html>
+
+<script>
+
+	// This is a simple *viewmodel* - JavaScript that defines the data and behavior of your UI
+	function AppViewModel() {
+	    this.firstName = ko.observable("Bert");
+	    this.lastName = ko.observable("Bertington");
+	    this.fullName = ko.computed(function() {
+	        return this.firstName() + " " + this.lastName();    
+	    }, this);
+	    this.capitalizeLastName = function() {
+	        var currentVal = this.lastName();        // Read the current value
+	        this.lastName(currentVal.toUpperCase()); // Write back a modified value
+	    };
+	}
+
+	// Activates knockout.js
+	ko.applyBindings(new AppViewModel());
+
+</script>
+

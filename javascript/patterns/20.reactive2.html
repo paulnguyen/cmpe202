@@ -1,0 +1,76 @@
+
+<!--
+
+	https://www.safaribooksonline.com/library/view/mastering-javascript-design
+	http://reactivex.io/rxjs/manual/overview.html
+
+	In this code we have attached a handler to the click event. This is fairly
+	simple code but think about how rapidly the complexity of this code
+	increases when we add conditions like "ignore additional click for 500ms
+	once a click is fired to prevent people double-clicking" and "Fire a
+	different event if the Ctrl key is being held when the button is clicked".
+	Reactive programming or functional reactive programming provides a simple
+	solution to these complex interaction scenarios through use of streams
+
+	REF:  http://reactivex.io/
+
+	Using RxJS you create an observable instead.
+
+	var button = document.querySelector('button');
+	Rx.Observable.fromEvent(button, 'click')
+	  .subscribe(() => console.log('Clicked!'));
+
+
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.all.js"></script>
+
+
+<!-- Let's start with a brief piece of HTML:  -->
+
+<body>
+  <button id="button"> Click Me!</button>
+  <br/>
+  <span id="output1"></span>
+  <br/>
+  <span id="output2"></span>  
+</body>
+
+
+<!-- To this, let's add a quick click counter -->
+
+<script>
+
+  var counter1 = 0;
+  var button = document.getElementById('button');
+  var source = Rx.Observable.fromEvent(button, 'click');
+  var subscription = source.subscribe(function (e) {
+    counter1++;
+    output1.innerHTML = "Clicked " + counter1 + " time" + (counter1 > 1 ? "s" : "");
+  });
+
+</script>
+
+
+<!--
+
+	Here you can see we're creating a new stream of events from the click
+	event on the button. The newly created stream is commonly referred to as a
+	metastream. Whenever an event is emitted from the source stream it is
+	automatically manipulated and published, as needed, to the metastream. We
+	subscribe to this stream and increment a counter. If we wanted to react to
+	only the even numbered events, we could do so by subscribing a second
+	function to the stream:
+
+-->
+
+<script>
+
+	var counter2 = 0;
+	var incrementSubscription = source.subscribe(() => counter2++);
+	var subscription = source.filter(x=>counter2%2==0).subscribe(function (e) {
+	  output2.innerHTML = "Clicked " + counter2 + " time" +(counter2 > 1 ? "s" : "");
+	});
+
+</script>
+

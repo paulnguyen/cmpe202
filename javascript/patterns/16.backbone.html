@@ -1,0 +1,142 @@
+
+<!--
+
+	http://arturadib.com/hello-backbonejs/
+    http://arturadib.com/hello-backbonejs/docs/5.html
+
+	Backbone.js Hello World Tutorial
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello Backbone.js</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+  <script>
+          
+    (function($){
+
+        // Backbone.sync: Overrides persistence storage with dummy function.
+        // This enables use of Model.destroy() without raising an error.
+        Backbone.sync = function(method, model, success, error){ success(); }
+
+        // Backbone Model
+        var Item = Backbone.Model.extend({
+            defaults: {
+              part1: 'hello',
+              part2: 'world'
+            }
+        });
+
+        var List = Backbone.Collection.extend({
+            model: Item
+        });
+
+        // Backbone Item View
+        var ItemView = Backbone.View.extend( {
+            // Name of tag to be created  
+            tagName: 'li',  
+            // ItemViews respond to two clickable actions for each Item: swap
+            // and delete.
+            events: {
+                  'click span.swap':  'swap',
+                  'click span.delete': 'remove'
+                },
+            // initialize() binds model change/removal to the corresponding
+            // handlers below.
+            initialize: function(){
+                _.bindAll(this, 'render', 'unrender', 'swap', 'remove'); 
+                // every function that uses 'this' as the current object should be in here
+              this.model.bind('change', this.render);
+              this.model.bind('remove', this.unrender);
+            },
+            // render() includes two extra spans corresponding to the actions
+            // swap and delete.
+                render: function(){
+                $(this.el).html('<span style="color:black;">'+this.model.get('part1')+' '+this.model.get('part2')+'</span> &nbsp; &nbsp; <span class="swap" style="font-family:sans-serif; color:blue; cursor:pointer;">[swap]</span> <span class="delete" style="cursor:pointer; color:red; font-family:sans-serif;">[delete]</span>');
+                return this; // for chainable calls, like .render().el
+            },
+            // unrender(): Makes Model remove itself from the DOM.
+            unrender: function(){
+                $(this.el).remove();
+            },
+            // swap() will interchange an Item's attributes. When the .set()
+            // model function is called, the event change will be triggered.
+            swap: function(){
+              var swapped = {
+                part1: this.model.get('part2'),
+                part2: this.model.get('part1')
+              };
+              this.model.set(swapped);
+            },
+            // remove(): We use the method destroy() to remove a model from
+            // its collection. Normally this would also delete the record from
+            // its persistent storage, but we have overridden that (see
+            // above).
+             remove: function(){
+                this.model.destroy();
+            }
+        });
+
+        // ListView class: Our main app view.
+        var ListView = Backbone.View.extend({
+            el: $('body'), // el attaches to existing element
+            events: {
+              'click button#add': 'addItem'
+            },
+            // initialize(): Automatically called upon instantiation. Where you
+            // make all types of bindings, excluding UI events, such as clicks,
+            // etc.
+            initialize: function(){
+              _.bindAll(this, 'render', 'addItem', 'appendItem'); 
+              // every function that uses 'this' as the current object should be in here
+              this.collection = new List();
+              this.collection.bind('add', this.appendItem); // collection event binder
+              this.counter = 0;
+              this.render();
+            },
+            // render(): Function in charge of rendering the entire view in
+            // this.el. Needs to be manually called by the user.
+            render: function(){
+              var self = this;
+              $(this.el).append("<button id='add'>Add list item</button>");
+              $(this.el).append("<ul></ul>");
+              _(this.collection.models).each(function(item){ // in case collection is not empty
+                self.appendItem(item);
+              }, this);
+            },
+            addItem: function(){
+              this.counter++;
+              var item = new Item();
+              item.set({
+                part2: item.get('part2') + this.counter // modify item defaults
+              });
+              this.collection.add(item);
+            },
+            appendItem: function(item){
+              var itemView = new ItemView({
+                model: item
+              });
+              $('ul', this.el).append(itemView.render().el);
+            }
+          });
+          // listView instance: Instantiate main app view.
+          var listView = new ListView();
+    })(jQuery);
+
+  </script>
+
+</body>
+</html>
+
+
