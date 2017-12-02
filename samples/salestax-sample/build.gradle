@@ -1,0 +1,23 @@
+
+buildscript {
+    dependencies {
+        classpath fileTree(dir: 'libs', include: '*.jar')
+    }
+}
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '1.2.4'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    runtime fileTree(dir: 'libs', include: '*.jar')
+}
+
+shadowJar {
+    baseName = 'cartlibs'
+}
