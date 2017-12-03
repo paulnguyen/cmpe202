@@ -17,8 +17,8 @@ public class Main
 
     public static void main(String[] args) 
     {
-    	//String URL = "http://localhost:8080/cart" ;
-    	String URL = "http://aws.nguyenresearch.com:8080/cart" ;
+    	String URL = "http://localhost:8080/cart" ;
+    	//String URL = "http://aws.nguyenresearch.com:8080/cart" ;
     	ClientResource client = new ClientResource( URL );
 
     	Representation result_string = client.get() ; 
