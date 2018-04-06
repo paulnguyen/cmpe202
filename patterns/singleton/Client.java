@@ -17,6 +17,12 @@ public class Client {
         theSingleton = Singleton.getInstance() ;
         System.out.println( theSingleton ) ;
 
+        // normal object test
+        NotSingleton obj1 = new NotSingleton() ;
+        NotSingleton obj2 = new NotSingleton() ;
+        System.out.println( obj1 ) ;
+        System.out.println( obj2 ) ;
+
 	}
 
    public static void main( String [] args )
