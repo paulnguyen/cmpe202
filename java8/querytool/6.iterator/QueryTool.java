@@ -52,7 +52,7 @@ public class QueryTool {
       	Filter odds  = (a) -> ((Integer.parseInt(a)) % 2) != 0;		
         
         // Java's built-in iterator
-        ArrayList<String> mapset = q.map(dataset, evens) ;
+        ArrayList<String> mapset = q.map(dataset, odds) ;
 		mapset.forEach( e -> System.out.println(e)) ;
     	
     } 
