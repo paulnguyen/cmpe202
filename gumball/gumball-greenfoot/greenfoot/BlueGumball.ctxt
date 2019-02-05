@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=BlueGumball
-comment0.text=\n\ Write\ a\ description\ of\ class\ BlueGumball\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ BlueGumball\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=2

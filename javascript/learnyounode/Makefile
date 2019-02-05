@@ -1,4 +1,0 @@
-
-ver:
-	node --version
-
