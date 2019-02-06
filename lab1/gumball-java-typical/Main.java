@@ -1,15 +1,15 @@
-
 public class Main {
       public static void main(String[] args) {
           
         int acceptCoins[];
         int insertCoins[];
-       
+        int inventory = 2;
+        int GumballCost = 25;
         
        //Gumball Machine 1 
         acceptCoins = new int[] {25};               // set accepted denominations(quarter)  
         //instance creation with inventory size, accepted denominations(nickel/quar/dime) and 1 gumball cost in cents
-        GumballMachine gumballMachine1 = new GumballMachine(2,acceptCoins,25);
+        GumballMachine gumballMachine1 = new GumballMachine(inventory,acceptCoins,GumballCost);
         System.out.println("#################### GumballMachine1 "+gumballMachine1+" ####################");  
         insertCoins = new int[] {25};               //Success test case gumballmachine1
         gumballMachine1.insertCoin(insertCoins);
@@ -22,7 +22,9 @@ public class Main {
         gumballMachine1.turnCrank();
 
         //GumballMachine2 
-        GumballMachine gumballMachine2 = new GumballMachine(4,acceptCoins,50);
+        GumballCost = 50;
+        inventory =4;
+        GumballMachine gumballMachine2 = new GumballMachine(inventory,acceptCoins,GumballCost);
         System.out.println("#################### GumballMachine2 "+gumballMachine2+" ####################"); 
         insertCoins = new int[] {25,25};            //Success test case gumballmachine2
         gumballMachine2.insertCoin(insertCoins);
@@ -39,11 +41,12 @@ public class Main {
         gumballMachine2.insertCoin(insertCoins);
         gumballMachine2.turnCrank();
         
-       
-       
+
         //GumballMachine3
+        inventory =3;
+        
         acceptCoins =new int[] {25,10,5};
-        GumballMachine gumballMachine3 = new GumballMachine(3,acceptCoins,50);
+        GumballMachine gumballMachine3 = new GumballMachine(inventory,acceptCoins,GumballCost);
         System.out.println("#################### GumballMachine3 "+gumballMachine3+" ####################"); 
         insertCoins = new int[] {10,10,25,5};            // Success test case gumballmachine3 
         gumballMachine3.insertCoin(insertCoins);

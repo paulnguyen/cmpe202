@@ -7,19 +7,18 @@ public class GumballMachine {
     private int gumballCost;
     private int currentAmount;
 
-    public GumballMachine(int size, int acceptCoins[], int gumballcost) {
+    public GumballMachine(int size, int acceptCoins[], int gumballCost) {
         // initialise instance variables
         this.num_gumballs = size;
         this.has_amount = false;
-        this.acceptedCoins = Arrays.copyOf(acceptCoins, acceptCoins.length);
-        this.gumballCost = gumballcost;
+        this.acceptedCoins = acceptCoins;
+        this.gumballCost = gumballCost;
         this.currentAmount = 0;
     }
     //Function  to accept coins and validate if 25 or 50 cents amount is inserted
     public void insertCoin(int coins[]) {
         this.currentAmount = 0; // initialize sum
-
-        // reduce time complexity if possible
+        
         for (int i = 0; i < this.acceptedCoins.length; i++) { //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
             for (int j = 0; j < coins.length; j++) {
                 if (acceptedCoins[i] == coins[j]) {
@@ -48,7 +47,7 @@ public class GumballMachine {
         } else { //calculate how much more is required and print accordingly
             int needMoney = 0;
             needMoney = (this.gumballCost - this.currentAmount);
-            System.out.println("Please insert more " + needMoney + " cents to get one gumball");
+            System.out.println("You inserted " + needMoney + " cents less to get one gumball");
         }
     }
 }
