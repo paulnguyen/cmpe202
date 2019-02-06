@@ -19,7 +19,8 @@ public class GumballMachine {
     public void insertCoin(int coins[]) {
         this.currentAmount = 0; // initialize sum
         
-        for (int i = 0; i < this.acceptedCoins.length; i++) { //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
+        //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
+        for (int i = 0; i < this.acceptedCoins.length; i++) { 
             for (int j = 0; j < coins.length; j++) {
                 if (acceptedCoins[i] == coins[j]) {
                     this.currentAmount = this.currentAmount + coins[j];
