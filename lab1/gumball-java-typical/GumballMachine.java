@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public abstract class GumballMachine {
 
     // instance variables
@@ -54,23 +52,5 @@ public abstract class GumballMachine {
             System.out.println("You inserted " + needMoney + " cents less to get one gumball");
         }
 
-    }
-}
-
-class GumballMachine_25Quart extends GumballMachine {
-    GumballMachine_25Quart() {
-        super(2, new int[] { 25 }, 25);
-    }
-}
-
-class GumballMachine_50Quart extends GumballMachine {
-    GumballMachine_50Quart() {
-        super(5, new int[] { 25 }, 50);
-    }
-}
-
-class GumballMachine_50AllCoins extends GumballMachine {
-    GumballMachine_50AllCoins() {
-        super(5, new int[] { 5,10,25 }, 50);
     }
 }
