@@ -1,63 +1,59 @@
 public class Main {
       public static void main(String[] args) {
-          
-        int acceptCoins[];
+      
         int insertCoins[];
-        int inventory = 2;
-        int GumballCost = 25;
-        
+       // int inventory = 2;
+
        //Gumball Machine 1 
-        acceptCoins = new int[] {25};               // set accepted denominations(quarter)  
-        //instance creation with inventory size, accepted denominations(nickel/quar/dime) and 1 gumball cost in cents
-        GumballMachine gumballMachine1 = new GumballMachine(inventory,acceptCoins,GumballCost);
-        System.out.println("#################### GumballMachine1 "+gumballMachine1+" ####################");  
-        insertCoins = new int[] {25};               //Success test case gumballmachine1
-        gumballMachine1.insertCoin(insertCoins);
-        gumballMachine1.turnCrank();
+        GumballMachine GumballMachine_25_Obj = new GumballMachine_25Quart();
+        System.out.println("######## Success test case GumballMachine1 "+GumballMachine_25_Obj+" ####################");  
+        insertCoins = new int[] {25};
+        GumballMachine_25_Obj.insertCoin(insertCoins);
+        GumballMachine_25_Obj.turnCrank();
+       
+        GumballMachine_25_Obj.insertCoin(insertCoins);
+        GumballMachine_25_Obj.turnCrank();
         
-        gumballMachine1.insertCoin(insertCoins);
-        gumballMachine1.turnCrank();
-        
-        gumballMachine1.insertCoin(insertCoins);    //test case for no inventory gumballmachine1
-        gumballMachine1.turnCrank();
+        //test case for no inventory 
+        System.out.println("###### Test case for no inventory GumballMachine1 "+GumballMachine_25_Obj+" #############");  
+        GumballMachine_25_Obj.insertCoin(insertCoins);    
+        GumballMachine_25_Obj.turnCrank();
 
         //GumballMachine2 
-        GumballCost = 50;
-        inventory =4;
-        GumballMachine gumballMachine2 = new GumballMachine(inventory,acceptCoins,GumballCost);
-        System.out.println("#################### GumballMachine2 "+gumballMachine2+" ####################"); 
-        insertCoins = new int[] {25,25};            //Success test case gumballmachine2
-        gumballMachine2.insertCoin(insertCoins);
-        gumballMachine2.turnCrank();
+        GumballMachine GumballMachine_50Quart_Obj = new GumballMachine_50Quart();
+        System.out.println("####### Success test case GumballMachine2 "+GumballMachine_50Quart_Obj+" ####################"); 
+        insertCoins = new int[] {25,25};            
+        GumballMachine_50Quart_Obj.insertCoin(insertCoins);
+        GumballMachine_50Quart_Obj.turnCrank();
         
-        gumballMachine2.insertCoin(insertCoins);
-        gumballMachine2.turnCrank();
+        GumballMachine_50Quart_Obj.insertCoin(insertCoins);
+        GumballMachine_50Quart_Obj.turnCrank();
         
-        insertCoins = new int[] {10,10,5,25};        // test case for not acceptable coins
-        gumballMachine2.insertCoin(insertCoins);
-        gumballMachine2.turnCrank();
+        // test case for not acceptable coins
+        System.out.println("####### Test case for not acceptable coins GumballMachine2 "+GumballMachine_50Quart_Obj+" ##########"); 
+        insertCoins = new int[] {10,10,5,25};                 
+        GumballMachine_50Quart_Obj.insertCoin(insertCoins);
+        GumballMachine_50Quart_Obj.turnCrank();
         
-        insertCoins = new int[] {25};               // test case for insufficient money inserted
-        gumballMachine2.insertCoin(insertCoins);
-        gumballMachine2.turnCrank();
+        insertCoins = new int[] {25};                         // test case for insufficient money inserted
+        GumballMachine_50Quart_Obj.insertCoin(insertCoins);
+        GumballMachine_50Quart_Obj.turnCrank();
         
-
-        //GumballMachine3
-        inventory =3;
-        
-        acceptCoins =new int[] {25,10,5};
-        GumballMachine gumballMachine3 = new GumballMachine(inventory,acceptCoins,GumballCost);
-        System.out.println("#################### GumballMachine3 "+gumballMachine3+" ####################"); 
+        //GumballMachine
+        GumballMachine GumballMachine_50AllCoins_Obj = new GumballMachine_50AllCoins();
+        System.out.println("####### Success test case GumballMachine3 "+GumballMachine_50AllCoins_Obj+" ##############"); 
         insertCoins = new int[] {10,10,25,5};            // Success test case gumballmachine3 
-        gumballMachine3.insertCoin(insertCoins);
-        gumballMachine3.turnCrank();
+        GumballMachine_50AllCoins_Obj.insertCoin(insertCoins);
+        GumballMachine_50AllCoins_Obj.turnCrank();
         
+        System.out.println("####### Success test case GumballMachine3 different coin combination "+GumballMachine_50AllCoins_Obj+" ##"); 
         insertCoins = new int[] {10,10,10,10,10};       // Success test case gumballmachine3 with different combination
-        gumballMachine3.insertCoin(insertCoins);
-        gumballMachine3.turnCrank();
+        GumballMachine_50AllCoins_Obj.insertCoin(insertCoins);
+        GumballMachine_50AllCoins_Obj.turnCrank();
         
-        insertCoins = new int[] {5,5,10,5,25};        // Success test case gumballmachine3 with different combination
-        gumballMachine3.insertCoin(insertCoins);     
-        gumballMachine3.turnCrank();
+        System.out.println("####### Success test case GumballMachine3 different coin combination "+GumballMachine_50AllCoins_Obj+" ##"); 
+        insertCoins = new int[] {5,5,10,5,25};       
+        GumballMachine_50AllCoins_Obj.insertCoin(insertCoins);     
+        GumballMachine_50AllCoins_Obj.turnCrank();
     }
 }

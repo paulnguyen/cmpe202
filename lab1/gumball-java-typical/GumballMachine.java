@@ -1,12 +1,13 @@
 import java.util.Arrays;
-public class GumballMachine {
+
+public abstract class GumballMachine {
+
     // instance variables
-    private int num_gumballs;
+    private int num_gumballs, gumballCost,currentAmount;
     private boolean has_amount;
     private int[] acceptedCoins;
-    private int gumballCost;
-    private int currentAmount;
 
+    //Constructor
     public GumballMachine(int size, int acceptCoins[], int gumballCost) {
         // initialise instance variables
         this.num_gumballs = size;
@@ -14,21 +15,23 @@ public class GumballMachine {
         this.acceptedCoins = acceptCoins;
         this.gumballCost = gumballCost;
         this.currentAmount = 0;
+        System.out.println("GumballMachine Invnentory " + this.num_gumballs + "costs " +this.gumballCost+ " for one gumball accepts");
+        for (int i = 0; i < this.acceptedCoins.length; i++) 
+        {  System.out.println( + this.acceptedCoins[i]);}
+        
     }
-    //Function  to accept coins and validate if 25 or 50 cents amount is inserted
+
     public void insertCoin(int coins[]) {
         this.currentAmount = 0; // initialize sum
-        
-        //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
-        for (int i = 0; i < this.acceptedCoins.length; i++) { 
+
+        for (int i = 0; i < this.acceptedCoins.length; i++) { //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
             for (int j = 0; j < coins.length; j++) {
-                if (acceptedCoins[i] == coins[j]) {
+                if (this.acceptedCoins[i] == coins[j]) {
                     this.currentAmount = this.currentAmount + coins[j];
                 }
             }
         }
-        if (this.currentAmount >= this.gumballCost) //
-        {
+        if (this.currentAmount >= this.gumballCost) {
             this.has_amount = true;
         } else {
             this.has_amount = false;
@@ -50,5 +53,24 @@ public class GumballMachine {
             needMoney = (this.gumballCost - this.currentAmount);
             System.out.println("You inserted " + needMoney + " cents less to get one gumball");
         }
+
+    }
+}
+
+class GumballMachine_25Quart extends GumballMachine {
+    GumballMachine_25Quart() {
+        super(2, new int[] { 25 }, 25);
+    }
+}
+
+class GumballMachine_50Quart extends GumballMachine {
+    GumballMachine_50Quart() {
+        super(5, new int[] { 25 }, 50);
+    }
+}
+
+class GumballMachine_50AllCoins extends GumballMachine {
+    GumballMachine_50AllCoins() {
+        super(5, new int[] { 5,10,25 }, 50);
     }
 }
