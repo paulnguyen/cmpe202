@@ -6,32 +6,23 @@ public class NoMoneyState implements State {
     }
  
     public void insertCoin(int insertedCoins[]) {
-        
          this.gumballMachine.currentAmount= 0;     // initialize sum
-         int j= 0;
-         int i=0;
-         
-         for ( i = 0; i < this.gumballMachine.acceptedCoins.length; i++)
-          {   //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
-              for( j = 0; j < insertedCoins.length; j++)
-              {
-               if(this.gumballMachine.acceptedCoins[i] == insertedCoins[j])
-               {
-                this.gumballMachine.currentAmount =  this.gumballMachine.currentAmount + insertedCoins[j];
+         for ( int i = 0; i < this.gumballMachine.acceptedCoins.length; i++){
+             //check if inserted coins are acceptable - either Nickel/Dime/Quarter as per GumballMachine
+             for( int j = 0; j < insertedCoins.length; j++)  {
+               if(this.gumballMachine.acceptedCoins[i] == insertedCoins[j])    {
+                  this.gumballMachine.currentAmount =  this.gumballMachine.currentAmount + insertedCoins[j];
                }
               }
             }
-            
-         if ( this.gumballMachine.currentAmount == this.gumballMachine.gumballCost )
-             { this.gumballMachine.has_amount = true ; 
-               System.out.println("You inserted the required money");
-               gumballMachine.setState(gumballMachine.getHasMoneyState());
-             }
-            else 
-           { 
+         // if inserted coins sums to cost of one gumball then set has amount to true   
+         if ( this.gumballMachine.currentAmount == this.gumballMachine.gumballCost ){ 
+             this.gumballMachine.has_amount = true ; 
+             System.out.println("You inserted the required money");
+             gumballMachine.setState(gumballMachine.getHasMoneyState());
+          }
+         else { 
              this.gumballMachine.has_amount = false;
-             if(this.gumballMachine.acceptedCoins.length == 1){System.out.println("Insert only quarters") ;}  
-             else {System.out.println("Insert only dime,nickel or quarters");}
            }   
     }
  

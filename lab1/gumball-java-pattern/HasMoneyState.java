@@ -13,7 +13,7 @@ public class HasMoneyState implements State {
     }
  
     public void ejectCoin() {
-        System.out.println("Quarter returned");
+        System.out.println("Coin returned");
         gumballMachine.setState(gumballMachine.getNoMoneyState());
     }
  

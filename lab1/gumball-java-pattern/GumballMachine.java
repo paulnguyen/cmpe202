@@ -1,12 +1,12 @@
-import java.util.Arrays;
-public class GumballMachine {
+
+public abstract class GumballMachine {
  
     State soldOutState;
     State noMoneyState;
     State hasMoneyState;
     State soldState;
- 
     State state = soldOutState;
+    
     int count = 0;
     int gumballCost;
     int acceptedCoins[];
@@ -20,7 +20,7 @@ public class GumballMachine {
         noMoneyState = new NoMoneyState(this);
         hasMoneyState = new HasMoneyState(this);
         soldState = new SoldState(this);
-        this.acceptedCoins = Arrays.copyOf(acceptCoins, acceptCoins.length);
+        this.acceptedCoins = acceptCoins;
         this.gumballCost = gumBallCost;
         this.count = numberGumballs;
         this.currentAmount =0 ;
@@ -32,7 +32,7 @@ public class GumballMachine {
     }
  
     public void insertCoin(int insertedCoins[]) {
-        this.InsertedCoins = Arrays.copyOf(insertedCoins, insertedCoins.length);
+        this.InsertedCoins = insertedCoins;
         state.insertCoin(this.InsertedCoins);
     }
  
@@ -98,3 +98,5 @@ public class GumballMachine {
         return result.toString();
     }
 }
+
+
