@@ -22,7 +22,7 @@ class Main
             System.out.print("\033[H\033[2J") ; // clear the screen
             System.out.flush() ;
             System.out.println( app.display() ) ;
-            System.out.print( "Key (Digit or X or Delete) => " ) ;
+            System.out.print( "Key (Digit or X to Delete) => " ) ;
             String ch = c.readLine() ;
             app.key( ch ) ;
         }
