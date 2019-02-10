@@ -17,6 +17,8 @@ public class GumballMachine
         // initialise instance variables
         this.num_gumballs = size;
         this.has_quarter = false;
+        this.has_one_cent = false;
+        this.has_dime = false;
     }
 
     /**
@@ -53,7 +55,7 @@ public class GumballMachine
     }
     
      /**
-     * count for two dimes
+     * count for two quarters
      */
     public int checkDoubleQuarter () 
     {
