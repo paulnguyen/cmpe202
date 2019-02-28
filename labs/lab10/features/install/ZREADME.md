@@ -22,6 +22,8 @@
 		* http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/downloads/eclipse4.5.2jdt-featureide3.0.0-linux64.tar.gz
 	* Mac OS X 64-Bit: 
 		* http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/downloads/eclipse4.5.2jdk-featureide3.0.0-osx64.tar.gz
+		
+![Install](./Eclipse 4.5 + Feature IDE 3.0.0 Installation.png)
 
 * AspectJ AJDT Tools Installation (Update Site)
 	
