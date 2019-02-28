@@ -2,6 +2,16 @@
 clean:
 	rm -f *.png *.svg
 
+install:
+	open https://www.spinellis.gr/umlgraph/
+	open https://www.spinellis.gr/umlgraph/doc/indexw.html
+	open https://www.imagemagick.org/script/download.php
+	open https://www.graphviz.org/
+	open https://brewformulas.org/Imagemagick
+	brew install plotutils
+	brew install graphviz
+	brew install imagemagick
+
 umlgraph1:
 	umlgraph umlgraph1 png
 	

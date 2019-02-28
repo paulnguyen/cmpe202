@@ -13,7 +13,7 @@ gumball:
 	mv gumball-state-diagram.png gumball
 	rm gumball.gv 
 	java -jar umple.jar -g Java --path gumball gumball.ump 
- 
+
 hellouml:
 	mkdir -p hellouml
 	java -jar umple.jar -g GvClassDiagram hellouml.ump 
@@ -21,7 +21,7 @@ hellouml:
 	mv hellouml-class-diagram.png hellouml
 	rm helloumlcd.gv
 	java -jar umple.jar -g Java --path hellouml hellouml.ump 
- 
+
 statemachines:
 	mkdir -p statemachines
 	java -jar umple.jar -g GvStateDiagram statemachine1.ump 
