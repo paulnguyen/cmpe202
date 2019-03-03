@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GumballMachine
-comment0.text=\n\ Write\ a\ description\ of\ class\ GumballMachine\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GumballMachine\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=GumballMachine()
 comment2.params=
