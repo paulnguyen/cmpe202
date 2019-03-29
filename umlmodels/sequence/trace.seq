@@ -1,0 +1,62 @@
+System 
+{
+	"cmpe221.Personalization@69a6cb"."setBestForCustomer()"->"void"{} 
+	"cmpe221.Personalization@69a6cb"."getWelcomeMessage()"->"[]"
+	{
+		"cmpe221.Personalization@69a6cb"."getFullName()"->"[]"
+		{
+			"cmpe221.DatabaseAccessor@fa21a4"."getCustomerName()"->"[]"
+			{
+				"cmpe221.GameDatabaseAccessor@c42804"."query()"->"com.mysql.jdbc.ResultSet@b64078"{} 
+			} 
+		} 
+	} 
+	"cmpe221.schedule@90ebfe"."scheduleDisplayAd()"->"images/standard_banner.jpg"
+	{
+		"cmpe221.schedule@90ebfe"."getAllReservedSlots()"->"[]"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAllReservedSlots()"->"[]"{} 
+		} 
+		"cmpe221.schedule@90ebfe"."getContentType()"->"General"{} 
+		"cmpe221.schedule@90ebfe"."getAD()"->"images/standard_banner.jpg"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAd()"->"images/standard_banner.jpg"{} 
+		} 
+	} 
+	"cmpe221.schedule@19b7c62"."scheduleDisplayAd()"->"images/standard_banner.jpg"
+	{
+		"cmpe221.schedule@19b7c62"."getAllReservedSlots()"->"[200, 8:30, 9:00, AM, 4, 305, 8:00, 8:30, AM, 4]"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAllReservedSlots()"->"[200, 8:30, 9:00, AM, 4, 305, 8:00, 8:30, AM, 4]"{} 
+		} 
+		"cmpe221.schedule@19b7c62"."getContentType()"->"General"{} 
+		"cmpe221.schedule@19b7c62"."getAD()"->"images/standard_banner.jpg"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAd()"->"images/standard_banner.jpg"{} 
+		} 
+	} 
+	"cmpe221.schedule@19b7c62"."scheduleDisplayAd()"->"images/standard_banner.jpg"
+	{
+		"cmpe221.schedule@19b7c62"."getAllReservedSlots()"->"[213, 8:30, 9:00, AM, 4]"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAllReservedSlots()"->"[213, 8:30, 9:00, AM, 4]"{} 
+		} 
+		"cmpe221.schedule@19b7c62"."getContentType()"->"General"{} 
+		"cmpe221.schedule@19b7c62"."getAD()"->"images/standard_banner.jpg"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAd()"->"images/standard_banner.jpg"{} 
+		} 
+	} 
+	"cmpe221.schedule@19b7c62"."scheduleDisplayAd()"->"images/standard_banner.jpg"
+	{
+		"cmpe221.schedule@19b7c62"."getAllReservedSlots()"->"[230, 2:30, 3:00, PM, 4]"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAllReservedSlots()"->"[230, 2:30, 3:00, PM, 4]"{} 
+		} 
+		"cmpe221.schedule@19b7c62"."getContentType()"->"General"{} 
+		"cmpe221.schedule@19b7c62"."getAD()"->"images/standard_banner.jpg"
+		{
+			"cmpe221.AdvertiseDatabaseAccessor@a7ae01"."getAd()"->"images/standard_banner.jpg"{} 
+		} 
+	} 
+}  
