@@ -1,7 +1,3 @@
-
-package decorator ;
-
-
 public class iPhone
 {
     Robot ro = new Robot() ;
@@ -40,7 +36,7 @@ public class iPhone
     public String sendCommand()
     {
         // return command string for robot 
-        // System.out.println( dr.getCommand() ) ;
+        System.out.println( dr.getCommand() ) ;
         return dr.getCommand().trim() ;
     }
 }

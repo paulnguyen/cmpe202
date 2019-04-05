@@ -1,4 +1,7 @@
 
+package decorator ;
+
+
 public class Shots implements IRobotCommand
 {
 

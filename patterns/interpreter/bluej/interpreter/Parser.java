@@ -1,7 +1,4 @@
 
-
-package interpreter ;
-
 public class Parser implements Expression
 {
     private String command ;

@@ -1,24 +1,23 @@
 
-package decorator ;
-
-public class Drink implements IRobotCommand
+public class Shots implements IRobotCommand
 {
-    
+
     private IRobotCommand component ;
     private String option = null ;
 
-    public Drink(IRobotCommand c)
+    public Shots(IRobotCommand c)
     {
         this.component = c ;
     }
 
     public String getCommand( ) 
     {
-        return component.getCommand() + (option==null ? "" : "Drink["+option+"] ") ;
+         return component.getCommand() + (option==null ? "" : "Shots["+option+"] ") ;
     }
     
     public void setOption(String o) 
     {
          this.option = o ;
-    }    
+    }
+    
 }

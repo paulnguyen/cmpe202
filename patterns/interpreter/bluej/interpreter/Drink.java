@@ -1,7 +1,4 @@
 
-
-package interpreter ;
-
 public class Drink implements Expression
 {
     public String interpret(String option)

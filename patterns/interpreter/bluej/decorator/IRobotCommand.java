@@ -1,6 +1,3 @@
-
-package decorator ;
-
 public interface IRobotCommand
 {
      String getCommand( ) ;    

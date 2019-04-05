@@ -1,7 +1,4 @@
 
-
-package interpreter ;
-
 public class Shots implements Expression
 {
     public String interpret(String option)

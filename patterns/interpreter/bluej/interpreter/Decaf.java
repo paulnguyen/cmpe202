@@ -1,6 +1,4 @@
 
-package interpreter ;
-
 public class Decaf implements Expression
 {
     public String interpret(String option)

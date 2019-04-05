@@ -1,77 +1,65 @@
 
 
-import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+package decorator ;
+
 
 public class iPhoneTest
 {
-    private iPhone iPhoneTest;
-    private iPhone iPhone6;
 
-    public iPhoneTest()
-    {
+    public static void main(final String[] args) {
+  
+        test1() ;
+
     }
 
-    @Before
-    public void setUp()
-    {
-        iPhone6 = new iPhone();
-    }
 
-    @After
-    public void tearDown()
+    public static void test1()
     {
-    }
 
-    @Test
-    public void test1()
-    {
+        iPhone iPhone6 =  new iPhone();
         iPhone6.setDecaf("1/2");
         iPhone6.setShots("D");
         iPhone6.setMilk("NF");
         iPhone6.setDrink("L");
-        assertEquals("Robot: Decaf[1/2] Shots[D] Milk[NF] Drink[L]", iPhone6.sendCommand());
+        System.out.println( iPhone6.sendCommand() );
     }
 
-
-    @Test
-    public void test2()
+    public static void test2()
     {
+        iPhone iPhone6 =  new iPhone();
         iPhone6.setShots("D");
         iPhone6.setDecaf("1/2");
         iPhone6.setDrink("L");
         iPhone6.setMilk("NF");
-        assertEquals("Robot: Decaf[1/2] Shots[D] Milk[NF] Drink[L]", iPhone6.sendCommand());
+        System.out.println( iPhone6.sendCommand() );    
     }
 
-    @Test
-    public void test3()
+    public static void test3()
     {
+        iPhone iPhone6 =  new iPhone();
         iPhone6.setDecaf("NO");
         iPhone6.setShots("1");
         iPhone6.setMilk("NF");
         iPhone6.setDrink("L");
-        assertEquals("Robot: Decaf[NO] Shots[1] Milk[NF] Drink[L]", iPhone6.sendCommand());
+        System.out.println( iPhone6.sendCommand() );    
     }
 
-    @Test
-    public void test4()
+    public static void test4()
     {
+        iPhone iPhone6 =  new iPhone();
         iPhone6.setDrink("L");
         iPhone6.setShots("1");
         iPhone6.setMilk("NF");
-        assertEquals("Robot: Shots[1] Milk[NF] Drink[L]", iPhone6.sendCommand());
+        System.out.println( iPhone6.sendCommand() );
     }
 
-    @Test
-    public void test5()
+    public static void test5()
     {
+        iPhone iPhone6 =  new iPhone();
         iPhone6.setShots("3");
         iPhone6.setMilk("NF");
         iPhone6.setDrink("L");
-        assertEquals("Robot: Shots[3] Milk[NF] Drink[L]", iPhone6.sendCommand());
+        System.out.println( iPhone6.sendCommand() );
     }
     
 

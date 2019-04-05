@@ -1,6 +1,3 @@
-
-package decorator ;
-
 public class Drink implements IRobotCommand
 {
     

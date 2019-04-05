@@ -1,49 +1,61 @@
 
-
-package interpreter ;
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 public class ParserTest
 {
-
-    public static void main(final String[] args) {
-  
-        test1() ;
-
+    private Parser p ;
+    
+    public ParserTest()
+    {
     }
 
-    public static void test1()
+    @Before
+    public void setUp()
     {
-        Parser p = new Parser() ;
+        p = new Parser() ;
+    }
+
+    @Test
+    public void test1()
+    {
         String val = p.interpret( "Robot: Decaf[1/2] Shots[D] Milk[NF] Drink[L]" ) ;
         System.out.println( val ) ;
     }
 
-    public static void test2()
+    @Test
+    public void test2()
     {
-        Parser p = new Parser() ;
         String val = p.interpret( "Robot: Decaf[NO] Shots[1] Milk[NF] Drink[C]" ) ;
         System.out.println( val ) ;
     }
     
-    public static void test3()
+    @Test
+    public void test3()
     {
-        Parser p = new Parser() ;
         String val = p.interpret( "Robot: Shots[1] Milk[NF] Drink[M]" ) ;
         System.out.println( val ) ;
     }
 
-    public static void test4()
+    @Test
+    public void test4()
     {
-        Parser p = new Parser() ;
         String val = p.interpret( "Robot: Shots[3] Milk[NF] Drink[CM]" ) ;
         System.out.println( val ) ;
     }
 
-    public static void test5()
+    @Test
+    public void test5()
     {
-        Parser p = new Parser() ;
         String val = p.interpret( "Robot: Decaf[1/2] Shots[2] Milk[2] Drink[L]" ) ;
         System.out.println( val ) ;
     }
     
+    
+    @After
+    public void tearDown()
+    {
+    }
 }

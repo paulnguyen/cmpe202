@@ -1,7 +1,4 @@
 
-
-package interpreter ;
-
 public class Milk implements Expression
 {
     public String interpret(String option)
