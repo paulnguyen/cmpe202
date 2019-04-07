@@ -2,7 +2,7 @@ public class ConcreteDecoratorSlash extends Decorator{
 
     private String addedData;
 
-    public ConcreteDecoratorSlash (){
+    public ConcreteDecoratorSlash(){
 
     }
 

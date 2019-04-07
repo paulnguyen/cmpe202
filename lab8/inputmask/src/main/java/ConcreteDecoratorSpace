@@ -2,7 +2,7 @@ public class ConcreteDecoratorSpace extends Decorator{
 
     private String addedData;
 
-    public ConcreteDecoratorSpace (){
+    public ConcreteDecoratorSpace(){
 
     }
 
