@@ -1,0 +1,41 @@
+package textuml2 ;
+
+import mdd_types;
+
+class Parent
+end ;
+
+class Hello specializes Parent
+	private attribute msg : String ;
+	dependency Message ;
+end ;
+
+association hello_world
+	navigable role h : World[1] ;
+	navigable role w : Hello[*] ;
+end ; 
+
+class World implements Message 
+	private attribute msg : String ;
+end ;
+  
+interface Message
+	operation display( m : String ) ;
+end ;  
+  
+class A
+	attribute b : B ;
+end ;
+
+class B
+	attribute a : A ;
+end ;
+
+association AB
+	role A.b ;
+	role B.a ;
+end ;
+  
+  
+end.
+

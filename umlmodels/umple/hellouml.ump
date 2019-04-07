@@ -1,0 +1,95 @@
+class Order  
+{  
+  // attributes
+  internal Date dateReceived ;     
+  internal Boolean isPrepaid ;  
+  internal String number;   
+  internal Money price ; 
+  // associations
+  1 order -> * OrderLine lineitems ;  
+  * -- 1 Customer ;
+  // methods
+  public void dispatch() {} 
+  public void close() {} 
+}  
+
+/*
+{ if Order.customer.getCreditRating is "poor" then Order.isPrepaid must be true }
+*/
+  
+class OrderLine  
+{  
+  // attributes
+  internal Integer quantity ; 
+  internal Money price ;
+  // associations
+  * -> 1 Product ;
+}  
+
+class Product
+{
+    isA IPriceObserver ;
+}
+
+interface IPriceObserver  
+{
+}
+
+class TaxCalc 
+{
+    depend IPriceObserver ;
+}
+
+class Customer
+{
+    // attributes
+    internal String name ;
+    // methods
+    internal Address address ;
+    public String getCreditRating() {}
+}
+
+class CorporateCustomer
+{
+    // inheritance
+    isA Customer ;
+    // attributes
+    internal String contactName ;
+    internal int creditRating ;
+    internal Money creditLimit ;
+    // methods
+    public void billForMonth( int m ) {}
+    public void remind() {}
+    // associations
+    * -> 0..1 Employee salesRep ;
+}
+
+class Employee
+{
+    * -- * SalesRegion territory ;
+}
+
+class SalesRegion
+{
+}
+
+associationClass Assigned
+{
+    * Employee ;
+    * SalesRegion ;
+}
+
+class SalesReport 
+{
+    depend SalesRegion ;
+}
+
+class PersonalCustomer
+{
+    // inheritance
+    isA Customer ;
+    // attributes
+    internal String creditCardNumber ;
+} // { getCreditRating() == "poor" }
+
+

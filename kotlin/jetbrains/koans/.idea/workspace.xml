@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="685a4e70-e6b1-4ebc-956f-6e7a69b213e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../gradle/.gradle/4.9/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/.gradle/4.9/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../gradle/.gradle/4.9/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../gradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/out/production/classes/META-INF/jetbrains.gradle.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hello/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Builders how it works/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Function literals with receiver/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/Html builders/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/String and map builders/out/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/build/" />
+    <ignored path="$PROJECT_DIR$/Builders/The function apply/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/All Any and other predicates/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Compound tasks/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Filter map/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/FlatMap/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Fold/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Get used to new style/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Get used to new style/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Get used to new style/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/GroupBy/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Introduction/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Max min/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Partition/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sort/out/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/build/" />
+    <ignored path="$PROJECT_DIR$/Collections/Sum/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Comparison/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Destructuring declarations/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Destructuring declarations/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Destructuring declarations/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/For loop/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/In range/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/In range/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/In range/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Invoke/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Operators overloading/out/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Range to/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Range to/build/" />
+    <ignored path="$PROJECT_DIR$/Conventions/Range to/out/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/build/" />
+    <ignored path="$PROJECT_DIR$/Generics/Generic functions/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Data classes/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Data classes/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Data classes/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Default arguments/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extension functions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extension functions/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extension functions/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extensions on collections/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extensions on collections/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Extensions on collections/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Hello, world!/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Java to Kotlin conversion/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Java to Kotlin conversion/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Java to Kotlin conversion/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Lambdas/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Named arguments/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Nullable types/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Object expressions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Object expressions/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Object expressions/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/SAM conversions/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/SAM conversions/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/SAM conversions/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Smart casts/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Smart casts/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Smart casts/out/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Strings/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Strings/build/" />
+    <ignored path="$PROJECT_DIR$/Introduction/Strings/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates examples/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Delegates how it works/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Lazy property/out/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/.gradle/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/build/" />
+    <ignored path="$PROJECT_DIR$/Properties/Properties/out/" />
+    <ignored path="$PROJECT_DIR$/util/.gradle/" />
+    <ignored path="$PROJECT_DIR$/util/build/" />
+    <ignored path="$PROJECT_DIR$/util/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Introduction/Lambdas/src/Task.kt">
+          <provider selected="true" editor-type-id="StudyEditor">
+            <state>
+              <EduEditorState>
+                <MainEditorState relative-caret-position="30">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                </MainEditorState>
+              </EduEditorState>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Introduction/Hello, world!/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Java to Kotlin conversion/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Named arguments/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Default arguments/src/Task.kt" />
+        <option value="$PROJECT_DIR$/Introduction/Lambdas/src/Task.kt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="215" />
+    <option name="y" value="81" />
+    <option name="width" value="1244" />
+    <option name="height" value="794" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Course" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Course">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kotlin_Koans" type="a264ea2a:RootNode" />
+              <item name="koans" type="ed842865:CourseNode" />
+            </path>
+            <path>
+              <item name="Kotlin_Koans" type="a264ea2a:RootNode" />
+              <item name="koans" type="ed842865:CourseNode" />
+              <item name="Introduction" type="d53b8fed:LessonNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551278195910" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="685a4e70-e6b1-4ebc-956f-6e7a69b213e1" name="Default Changelist" comment="" />
+      <created>1551193663900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551193663900</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="215" y="81" width="1244" height="794" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1921797" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" weight="0.32905984" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Task" order="4" visible="true" weight="0.28618968" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Introduction/Java to Kotlin conversion/src/JavaCode.java">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Hello, world!/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Java to Kotlin conversion/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Named arguments/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="15">
+              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Default arguments/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Introduction/Lambdas/src/Task.kt">
+      <provider selected="true" editor-type-id="StudyEditor">
+        <state>
+          <EduEditorState>
+            <MainEditorState relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </MainEditorState>
+          </EduEditorState>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Builders-Builders_how_it_works</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=539&amp;EndingColumnNumber=435&amp;EndingLineNumber=4&amp;StartingColumnNumber=425&amp;StartingLineNumber=4&amp;Timestamp=517895148.806129"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=2592&amp;EndingColumnNumber=13&amp;EndingLineNumber=33&amp;StartingColumnNumber=3&amp;StartingLineNumber=33&amp;Timestamp=517895148.806282"
+         lockedSize = "{341, 85}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=3082&amp;EndingColumnNumber=13&amp;EndingLineNumber=38&amp;StartingColumnNumber=2&amp;StartingLineNumber=38&amp;Timestamp=517895148.806396"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=28&amp;CharacterRangeLoc=3430&amp;EndingColumnNumber=19&amp;EndingLineNumber=43&amp;StartingColumnNumber=64&amp;StartingLineNumber=42&amp;Timestamp=517895148.806499"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=9&amp;CharacterRangeLoc=1000&amp;EndingColumnNumber=26&amp;EndingLineNumber=8&amp;StartingColumnNumber=17&amp;StartingLineNumber=8&amp;Timestamp=517895148.806603"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=1056&amp;EndingColumnNumber=28&amp;EndingLineNumber=9&amp;StartingColumnNumber=17&amp;StartingLineNumber=9&amp;Timestamp=517895148.806705"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=7&amp;CharacterRangeLoc=5&amp;EndingColumnNumber=8&amp;EndingLineNumber=1&amp;StartingColumnNumber=1&amp;StartingLineNumber=1&amp;Timestamp=517895148.806803"
+         lockedSize = "{178, 215}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=388&amp;EndingColumnNumber=285&amp;EndingLineNumber=4&amp;StartingColumnNumber=274&amp;StartingLineNumber=4&amp;Timestamp=517895148.806904"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=784&amp;EndingColumnNumber=680&amp;EndingLineNumber=4&amp;StartingColumnNumber=670&amp;StartingLineNumber=4&amp;Timestamp=517895148.807004"
+         lockedSize = "{347, 82}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=827&amp;EndingColumnNumber=13&amp;EndingLineNumber=6&amp;StartingColumnNumber=2&amp;StartingLineNumber=6&amp;Timestamp=517895148.807105"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=0&amp;CharacterRangeLoc=1047&amp;EndingColumnNumber=8&amp;EndingLineNumber=9&amp;StartingColumnNumber=8&amp;StartingLineNumber=9&amp;Timestamp=517895148.807203"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=51&amp;EndingColumnNumber=58&amp;EndingLineNumber=1&amp;StartingColumnNumber=47&amp;StartingLineNumber=1&amp;Timestamp=517895148.8073"
+         lockedSize = "{178, 106}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=420&amp;EndingColumnNumber=316&amp;EndingLineNumber=4&amp;StartingColumnNumber=306&amp;StartingLineNumber=4&amp;Timestamp=517895148.807404"
+         lockedSize = "{347, 87}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=463&amp;EndingColumnNumber=360&amp;EndingLineNumber=4&amp;StartingColumnNumber=349&amp;StartingLineNumber=4&amp;Timestamp=517895148.807507"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=767&amp;EndingColumnNumber=664&amp;EndingLineNumber=4&amp;StartingColumnNumber=653&amp;StartingLineNumber=4&amp;Timestamp=517895148.807604"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=255&amp;EndingColumnNumber=151&amp;EndingLineNumber=4&amp;StartingColumnNumber=141&amp;StartingLineNumber=4&amp;Timestamp=517895148.8077"
+         lockedSize = "{402, 81}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=298&amp;EndingColumnNumber=195&amp;EndingLineNumber=4&amp;StartingColumnNumber=184&amp;StartingLineNumber=4&amp;Timestamp=517895148.807799"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=632&amp;EndingColumnNumber=529&amp;EndingLineNumber=4&amp;StartingColumnNumber=518&amp;StartingLineNumber=4&amp;Timestamp=517895148.807895"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=2590&amp;EndingColumnNumber=11&amp;EndingLineNumber=33&amp;StartingColumnNumber=1&amp;StartingLineNumber=33&amp;Timestamp=517895148.807991"
+         lockedSize = "{401, 87}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=11&amp;CharacterRangeLoc=3081&amp;EndingColumnNumber=12&amp;EndingLineNumber=38&amp;StartingColumnNumber=1&amp;StartingLineNumber=38&amp;Timestamp=517895148.808092"
+         lockedSize = "{367, 139}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=28&amp;CharacterRangeLoc=3429&amp;EndingColumnNumber=18&amp;EndingLineNumber=43&amp;StartingColumnNumber=63&amp;StartingLineNumber=42&amp;Timestamp=517895148.808195"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=10&amp;CharacterRangeLoc=2594&amp;EndingColumnNumber=15&amp;EndingLineNumber=33&amp;StartingColumnNumber=5&amp;StartingLineNumber=33&amp;Timestamp=517895148.808293"
+         lockedSize = "{410, 89}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=12&amp;CharacterRangeLoc=3456&amp;EndingColumnNumber=0&amp;EndingLineNumber=44&amp;StartingColumnNumber=17&amp;StartingLineNumber=43&amp;Timestamp=517895148.808392"
+         lockedSize = "{401, 163}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Volumes/Data/Projects/sslplaygrounds/Swift%20Standard%20Library.playground/Pages/Slicing%20Collections.xcplaygroundpage#CharacterRangeLen=28&amp;CharacterRangeLoc=3440&amp;EndingColumnNumber=0&amp;EndingLineNumber=44&amp;StartingColumnNumber=1&amp;StartingLineNumber=43&amp;Timestamp=517895148.808493"
+         lockedSize = "{267, 264}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>

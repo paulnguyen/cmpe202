@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0" name="textuml1" URI="hellouml/textuml1">
+  <eAnnotations xmi:id="_com.abstratt2Fmdd2F" source="com.abstratt/mdd/">
+    <details xmi:id="_com.abstratt2Fmdd2F-_details.0" key="dateCreated" value="2017/01/22 01:16:39 648 -0800"/>
+  </eAnnotations>
+  <packageImport xmi:id="_packageImport.0">
+    <importedPackage xmi:type="uml:Model" href="pathmap://MDD_LIBRARIES/mdd_types.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="Product" name="Product">
+    <eAnnotations xmi:id="Product-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Product-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml1.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="Product-description" name="description" visibility="public">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-description-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-description-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Product-available" name="available" visibility="public">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-available-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-available-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Product-price" name="price" visibility="public">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Double"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-price-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Product-price-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="Cart" name="Cart">
+    <eAnnotations xmi:id="Cart-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Cart-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml1.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="Cart-name" name="name" visibility="public">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Cart-name-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Cart-name-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Cart-desc" name="desc" visibility="public">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Cart-desc-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Cart-desc-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="CartItem" name="CartItem">
+    <eAnnotations xmi:id="CartItem-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="CartItem-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml1.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="CartItemProduct" name="CartItemProduct" memberEnd="CartItemProduct-item CartItemProduct-product" navigableOwnedEnd="CartItemProduct-item CartItemProduct-product">
+    <ownedEnd xmi:id="CartItemProduct-item" name="item" type="CartItem" association="CartItemProduct">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="CartItemProduct-item-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CartItemProduct-item-_upperValue" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="CartItemProduct-product" name="product" type="Product" association="CartItemProduct">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="CartItemProduct-product-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CartItemProduct-product-_upperValue" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="CartHasItems" name="CartHasItems" memberEnd="CartHasItems-item CartHasItems-cart" navigableOwnedEnd="CartHasItems-item CartHasItems-cart">
+    <ownedEnd xmi:id="CartHasItems-item" name="item" type="CartItem" aggregation="shared" association="CartHasItems">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="CartHasItems-item-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CartHasItems-item-_upperValue" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="CartHasItems-cart" name="cart" type="Cart" association="CartHasItems">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="CartHasItems-cart-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CartHasItems-cart-_upperValue" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:id="_profileApplication.0">
+    <eAnnotations xmi:id="_profileApplication.0-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://MDD_PROFILES/mdd_extensions.uml#_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-mdd_extensions"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDD_PROFILES/mdd_extensions.uml#_0"/>
+  </profileApplication>
+</uml:Package>

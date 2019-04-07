@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Table of Contents'/>
+        <page name='Text'/>
+        <page name='Indexing and Slicing Strings'/>
+        <page name='Customizing Textual Representations'/>
+        <page name='Sequences and Collections'/>
+        <page name='Understanding Value Semantics'/>
+        <page name='Processing Sequences and Collections'/>
+        <page name='Slicing Collections'/>
+        <page name='Understanding Collection Protocols'/>
+        <page name='Creating a Generic Collection'/>
+        <page name='Revision History'/>
+        <page name='License'/>
+    </pages>
+</playground>
