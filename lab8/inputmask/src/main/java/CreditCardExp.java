@@ -31,8 +31,8 @@ public class CreditCardExp implements IDisplayComponent, IKeyEventHandler
 		if ( cnt >= 17 && cnt <= 20  )
 			date += ch ;
 		if (date.length() == 4){
-			date1 = cds.addCharacter(date.substring(0, 1));
-			date2 = cds1.addCharacter(date.substring(2, 3));
+			date1 = cds.addCharacter(date.substring(0, 2));
+			date2 = date.substring(2, 4);
 
 			date = date1 + date2;
 		}

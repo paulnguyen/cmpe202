@@ -34,10 +34,10 @@ public class CreditCardNum implements IDisplayComponent, IKeyEventHandler
 		if ( cnt <= 16 ) {
 			number += ch;
 			if (number.length() == 16){
-				number1 = cds.addCharacter(number.substring(0, 3));
-				number2 = cds.addCharacter(number.substring(4, 7));
-				number3 = cds.addCharacter(number.substring(8, 11));
-				number4 = cds.addCharacter(number.substring(12, 15));
+				number1 = cds.addCharacter(number.substring(0, 4));
+				number2 = cds.addCharacter(number.substring(4, 8));
+				number3 = cds.addCharacter(number.substring(8, 12));
+				number4 = number.substring(12, 16);
 
 				number = number1 + number2 + number3 + number4;
 			}
