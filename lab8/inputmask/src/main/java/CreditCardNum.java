@@ -9,12 +9,14 @@ public class CreditCardNum implements IDisplayComponent, IKeyEventHandler
 	private String number2 = "";
 	private String number3 = "";
 	private String number4 = "";
+	private ICardDecorator c;
 
 	private ConcreteDecoratorSpace cds;
 
-	public CreditCardNum ()
+	public CreditCardNum()
 	{
-     	cds = new ConcreteDecoratorSpace();
+     	cds = new ConcreteDecoratorSpace(c);
+
 	}
 
     public void setNext( IKeyEventHandler next) {

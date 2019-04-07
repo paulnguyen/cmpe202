@@ -9,10 +9,12 @@ public class CreditCardExp implements IDisplayComponent, IKeyEventHandler
 	private ConcreteDecoratorSpace cds1;
 	private String date1 = "";
 	private String date2 = "";
+	private ICardDecorator c;
+
 
 	public CreditCardExp(){
-		cds = new ConcreteDecoratorSlash();
-		cds1 = new ConcreteDecoratorSpace();
+		cds = new ConcreteDecoratorSlash(c);
+		cds1 = new ConcreteDecoratorSpace(c);
 	}
     public void setNext( IKeyEventHandler next) {
     	this.nextHandler = next ;
