@@ -30,7 +30,8 @@
 	* http://download.eclipse.org/tools/ajdt/45/dev/update
 
 ![Install](./images/ajdt-install.png)
-		
+
+![Install](./images/ajdt-versions.png)		
 * FeatureIDE 3.0.0 based on Eclipse 4.5.2 (Update Site)
 	
 	* http://featureide.cs.ovgu.de/update/v3/
