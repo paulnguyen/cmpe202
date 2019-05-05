@@ -6,30 +6,30 @@ And run the model of GumballMachineV2, but it always returns data of the first m
 Therefore, I and Marianne had to use Sai’s machine and run all configuration to make sure the application works well.
 Below are my screenshots for each configuration:
 
-![](output/IMG_1846.png) 
+![](output/IMG_1846.JPG) 
 
  
 1.	Crank Model – one quarter
 
-![](output/IMG_1808.jpg)
+![](output/IMG_1808.JPG)
 
 2.	Crank model – two quarters
 
-![](output/IMG_1810.png) 
+![](output/IMG_1810.JPG) 
 
 
 3.	Slot model – cost 25 cents
 
-![](output/IMG_1841.png) 
+![](output/IMG_1841.JPG) 
 
-![](output/IMG_1842.png) 
+![](output/IMG_1842.JPG) 
 
-![](output/IMG_1844.png) 
+![](output/IMG_1844.JPG) 
 
 4.	Slot model – cost 50 cents
 
 
-![](output/IMG_1845.png) 
+![](output/IMG_1845.JPG) 
 
 
 
