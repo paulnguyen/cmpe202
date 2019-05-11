@@ -22,6 +22,9 @@ groovy-run:
 javascript-run:
 	node $(javascript)
 
+ruby-run:
+	ruby $(ruby)
+
 ## use ":q" to quit
 groovy:
 	groovyConsole
@@ -37,3 +40,7 @@ javascript:
 ## use ":quit" to quit
 kotlin:
 	kotlinc-jvm
+
+## type "exit" to quit
+ruby:
+	irb --simple-prompt

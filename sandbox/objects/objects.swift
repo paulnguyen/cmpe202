@@ -5,10 +5,10 @@
 
     A Swift Tour
 
+    https://developer.apple.com/swift/
     https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html
 
 */
-
 
 
 
@@ -23,6 +23,9 @@
  declarations are written the same way.
  
 */
+
+print( "\nObjects and Classes" )
+print( "---------------------" )
 
 
 class Shape1 {
@@ -51,8 +54,6 @@ class Shape2 {
 
 */
 
-print( "\nClass and Object Example" )
-print( "-------------------------" )
 
 var shape = Shape2()
 shape.numberOfSides = 7
@@ -64,6 +65,8 @@ shape.greet( "John" )
 
 /*
  
+    Object Constructor / Deconstructor
+
     This version of the Shape class is missing something important: 
     an initializer to set up the class when an instance is created. 
     Use init to create one.
@@ -107,6 +110,8 @@ print( named_shape1.simpleDescription() )
 
 /*
 
+    Sub-Classes & Explicit Method Overrides
+
     Subclasses include their superclass name after their class name, 
     separated by a colon. There is no requirement for classes to 
     subclass any standard root class, so you can include or omit a 
@@ -149,6 +154,8 @@ print( "test.simpleDescription(): ", test.simpleDescription() )
 
 /*
 
+    Properties with Getters and Setters
+
     In addition to simple properties that are stored, 
     properties can have a getter and a setter.
  
@@ -188,6 +195,8 @@ print("triangle.sideLength: ", triangle.sideLength)
 
 /*
  
+    Will Set & Did Set / Around Execution of Setting a Value
+
     If you don’t need to compute the property but still need to 
     provide code that is run before and after setting a new value, 
     use willSet and didSet. The code you provide is run any time 
@@ -231,6 +240,8 @@ print("triangleAndSquare.triangle.sideLength: ", triangleAndSquare.triangle.side
 
 /*
 
+    Optional Values and the ? Operator
+
     When working with optional values, you can write ? before operations 
     like methods, properties, and subscripting. If the value before 
     the ? is nil, everything after the ? is ignored and the value of 
@@ -241,7 +252,7 @@ print("triangleAndSquare.triangle.sideLength: ", triangleAndSquare.triangle.side
 
 */
 
-print( "\noptional values and the ? operator" )
+print( "\nOptional Values and the ? operator" )
 print( "----------------------------------" )
 
 let optionalSquare1: Square? = Square(sideLength: 2.5, name: "optional square")
@@ -253,3 +264,246 @@ optionalSquare2 = nil
 let sideLength2 = optionalSquare2?.sideLength
 print( sideLength2 )
 
+
+
+
+/*
+ 
+    Nested Functions
+
+    Functions can be nested. Nested functions have 
+    access to variables that were declared in the 
+    outer function. You can use nested functions 
+    to organize the code in a function that is 
+    long or complex.
+ 
+*/
+
+print( "\nNested Functions" )
+print( "----------------" )
+
+func returnFifteen() -> Int {
+    var y = 10
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}
+
+print( "returnFifteen(): ", returnFifteen() )
+
+
+
+/*
+    Functions as Arguments
+
+    A function can take another function as one of its arguments.
+*/
+
+print( "\nFunctions as function args (higher-order functions)" )
+print( "---------------------------------------------------" )
+
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+
+var numbers = [20, 19, 7, 12]
+print( "numbers: ", numbers )
+print( "lastThenTen: ", lessThanTen )
+print( "hasAnyMatches(list: numbers, condition: lessThanTen): ", hasAnyMatches(list: numbers, condition: lessThanTen))
+
+
+
+
+/*
+
+    Swift Protocols (i.e. like Java Interfaces)
+
+    https://docs.swift.org/swift-book/LanguageGuide/Protocols.html
+
+*/
+
+
+print( "\nSwift protocols - like interfaces in Java" )
+print( "---------------------------------------------------" )
+
+
+
+/*
+
+Property Requirements
+
+A protocol can require any conforming type to provide an instance property or
+type property with a particular name and type. The protocol doesn’t specify
+whether the property should be a stored property or a computed property—it
+only specifies the required property name and type. The protocol also
+specifies whether each property must be gettable or gettable and settable
+
+*/
+
+
+protocol SomeProtocol {
+    var mustBeSettable: Int { get set }
+    var doesNotNeedToBeSettable: Int { get }
+}
+
+
+// Here’s an example of a protocol with a single instance property requirement:
+
+protocol FullyNamed {
+    var fullName: String { get }
+}
+
+class Starship: FullyNamed {
+    var prefix: String?
+    var name: String
+    init(name: String, prefix: String? = nil) {
+        self.name = name
+        self.prefix = prefix
+    }
+    var fullName: String {
+        return (prefix != nil ? prefix! + " " : "") + name
+    }
+}
+
+var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
+print ( ncc1701.fullName )
+
+
+
+/*
+
+Method Requirements
+
+Protocols can require specific instance methods and type methods to be
+implemented by conforming types. These methods are written as part of the
+protocol’s definition in exactly the same way as for normal instance and type
+methods, but without curly braces or a method body. Variadic parameters are
+allowed, subject to the same rules as for normal methods. Default values,
+however, can’t be specified for method parameters within a protocol’s
+definition.
+
+*/
+
+// The following example defines a protocol with a single instance method requirement:
+
+protocol RandomNumberGenerator {
+    func random() -> Double
+}
+
+class LinearCongruentialGenerator: RandomNumberGenerator {
+    var lastRandom = 42.0
+    let m = 139968.0
+    let a = 3877.0
+    let c = 29573.0
+    func random() -> Double {
+        lastRandom = ((lastRandom * a + c).truncatingRemainder(dividingBy:m))
+        return lastRandom / m
+    }
+}
+
+let generator = LinearCongruentialGenerator()
+
+print("Here's a random number: \(generator.random())")
+print("And another one: \(generator.random())")
+
+
+
+
+/*
+
+Mutating Method Requirements
+
+It’s sometimes necessary for a method to modify (or mutate) the instance it
+belongs to. For instance methods on value types (that is, structures and
+enumerations) you place the mutating keyword before a method’s func keyword to
+indicate that the method is allowed to modify the instance it belongs to and
+any properties of that instance. This process is described in Modifying Value
+Types from Within Instance Methods.
+
+*/
+
+// The toggle() method is marked with the mutating keyword as part of the
+// Togglable protocol definition, to indicate that the method is expected to
+// mutate the state of a conforming instance when it’s called:
+
+protocol Togglable {
+    mutating func toggle()
+}
+
+enum OnOffSwitch: Togglable {
+    case off, on
+    mutating func toggle() {
+        switch self {
+        case .off:
+            self = .on
+        case .on:
+            self = .off
+        }
+    }
+}
+
+var lightSwitch = OnOffSwitch.off
+print ( lightSwitch )
+lightSwitch.toggle()
+print ( lightSwitch )
+
+
+/*
+
+Initializer Requirements
+
+Protocols can require specific initializers to be implemented by conforming
+types. You write these initializers as part of the protocol’s definition in
+exactly the same way as for normal initializers, but without curly braces or
+an initializer body:
+
+*/
+
+protocol SomeProtocolInit {
+    init(someParameter: Int)
+}
+
+// You can implement a protocol initializer requirement on a conforming class
+// as either a designated initializer or a convenience initializer. In both
+// cases, you must mark the initializer implementation with the required
+// modifier:
+
+class SomeClass: SomeProtocolInit {
+    required init(someParameter: Int) {
+        // initializer implementation goes here
+    }
+}
+
+
+// If a subclass overrides a designated initializer from a superclass, and
+// also implements a matching initializer requirement from a protocol, mark
+// the initializer implementation with both the required and override
+// modifiers:
+
+class SomeSuperClass {
+    init(someParameter: Int) {
+        // initializer implementation goes here
+    }
+}
+
+class SomeSubClass: SomeSuperClass, SomeProtocolInit {
+    // "required" from SomeProtocol conformance; "override" from SomeSuperClass
+    required override init(someParameter: Int) {
+        super.init( someParameter: someParameter )
+        // initializer implementation goes here
+    }
+}
+
+
+ 

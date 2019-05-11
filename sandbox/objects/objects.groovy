@@ -14,14 +14,22 @@ import java.lang.reflect.* ;
 
 class GumballMachine {
 	
+	// groovy genereates set/get for properties 
 	String model  = "M1V192019"
 	String serial = "123997919189"
 	Integer count = 100
 	private Integer coinValue = 0 ; // cents
 	private Integer cost = 0 ; // configure at setup	
 
+	// can override setter
+	private setCount( Integer c ) {
+		println ( "set count => ${c} ignored" )
+		// ignore
+	}
+
 	static void main(String[] args) {
 		GumballMachine m = new GumballMachine()
+		m.count = 1
 		println ( "${m.model} ${m.serial} ${m.count}" )
 		println ( "** Properties **" )
 		m.class.getDeclaredFields().each {
