@@ -3,35 +3,6 @@
 
 	https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
 
-	Like local classes, anonymous classes can capture variables; they have the 
-	same access to local variables of the enclosing scope:
-	An anonymous class has access to the members of its enclosing class.
-    An anonymous class cannot access local variables in its enclosing scope 
-    that are not declared as final or effectively final.
-
-    Like a nested class, a declaration of a type (such as a variable) in an 
-    anonymous class shadows any other declarations in the enclosing scope that 
-    have the same name. See Shadowing for more information.
-
-	Anonymous classes also have the same restrictions as local classes with 
-	respect to their members:
-
-    You cannot declare static initializers or member interfaces in an 
-    anonymous class.
-
-   	An anonymous class can have static members provided that they 
-   	are constant variables.
-
-	Note that you can declare the following in anonymous classes:
-
-    Fields
-    Extra methods (even if they do not implement any methods of the supertype)
-    Instance initializers
-    Local classes
-
-	However, you cannot declare constructors in an anonymous class.
-
-
 */
 
 
@@ -44,6 +15,7 @@ public class HelloWorldAnonymousClasses {
   
     public void sayHello() {
         
+        // Named Inner Class
         class EnglishGreeting implements HelloWorld {
             String name = "world";
             public void greet() {
@@ -54,9 +26,9 @@ public class HelloWorldAnonymousClasses {
                 System.out.println("Hello " + name);
             }
         }
-      
         HelloWorld englishGreeting = new EnglishGreeting();
         
+        // Annonymous Inner Class
         HelloWorld frenchGreeting = new HelloWorld() {
             String name = "tout le monde";
             public void greet() {
@@ -68,6 +40,7 @@ public class HelloWorldAnonymousClasses {
             }
         };
         
+        // Call Both...
         englishGreeting.greet();
         frenchGreeting.greetSomeone("Fred");
     }

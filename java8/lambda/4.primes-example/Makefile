@@ -6,6 +6,6 @@ clean:
 compile:
 	javac *.java
 
-run:
+run: compile
 	java -cp . CountPrimes
 	
