@@ -53,4 +53,35 @@ umlgraph11:
 umlgraph12:
 	 pic2plot -T svg umlgraph12.pic > umlgraph12.svg
 	 convert umlgraph12.svg umlgraph12.png
+
+umlgraph7-on-mac:
+	 pic2plot -T svg umlgraph7.pic > umlgraph7.svg
+	 qlmanage -t -s 1000 -o . umlgraph7.svg
+	 mv umlgraph7.svg.png umlgraph7.png 
+
+umlgraph8-on-mac:
+	 pic2plot -T svg umlgraph8.pic > umlgraph8.svg
+	 qlmanage -t -s 1000 -o . umlgraph8.svg
+	 mv umlgraph8.svg.png umlgraph8.png 	
+
+umlgraph9-on-mac:
+	 pic2plot -T svg umlgraph9.pic > umlgraph9.svg
+	 qlmanage -t -s 1000 -o . umlgraph9.svg
+	 mv umlgraph9.svg.png umlgraph9.png 
+	 
+umlgraph10-on-mac:
+	 pic2plot -T svg umlgraph10.pic > umlgraph10.svg
+	 qlmanage -t -s 1000 -o . umlgraph10.svg
+	 mv umlgraph10.svg.png umlgraph10.png 
+	 
+umlgraph11-on-mac:
+	 pic2plot -T svg umlgraph11.pic > umlgraph11.svg
+	 qlmanage -t -s 1000 -o . umlgraph11.svg
+	 mv umlgraph11.svg.png umlgraph11.png 
+	 
+umlgraph12-on-mac:
+	 pic2plot -T svg umlgraph12.pic > umlgraph12.svg
+	 qlmanage -t -s 1000 -o . umlgraph12.svg
+	 mv umlgraph12.svg.png umlgraph12.png 
+
 	 

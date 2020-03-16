@@ -8,8 +8,10 @@ java -version
 
 ## Install UMLGraph, GraphViz and Plotutils
 
-wget http://www.spinellis.gr/umlgraph/jars/UmlGraph-5.7_2.23-SNAPSHOT.jar
-wget http://www.spinellis.gr/umlgraph/UMLGraph-5.7_2.23-SNAPSHOT.tar.gz
+open https://www.spinellis.gr/umlgraph/index.html
+wget https://www.spinellis.gr/umlgraph/jars/UmlGraph-5.7_2.32-SNAPSHOT.jar
+wget https://www.spinellis.gr/umlgraph/UMLGraph-5.7_2.32-SNAPSHOT.tar.gz
+wget https://www.spinellis.gr/umlgraph/UMLGraph-5.7_2.32-SNAPSHOT.zip
 sudo apt-get install graphviz
 sudo apt-get install plotutils
 sudo apt-get install imagemagick
