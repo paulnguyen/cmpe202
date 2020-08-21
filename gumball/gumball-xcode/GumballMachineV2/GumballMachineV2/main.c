@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	init_gumball( m1, 1 ) ;
 	init_gumball( m2, 10 ) ;
 	
-	printf("Simple Gumball Machine - Version 3\n");
+	printf("Simple Gumball Machine - Version 2\n");
 	
 	printf( "Machine #1\n" ) ;
 	insert_quarter( m1 ) ;
