@@ -3,6 +3,7 @@ clean:
 	rm -f *.png *.svg
 
 install:
+	open https://yuml.me/diagram/scruffy/class/draw
 	open https://github.com/wandernauta/yuml
 	sudo pip install https://github.com/wandernauta/yuml/zipball/master
 
@@ -24,7 +25,10 @@ test4:
 test5:
 	yuml -i test5yuml -o test5.png -f png -t class -s scruffy 
 
+yuml-post:
+	curl -X POST https://yuml.me/diagram/scruffy/class -F 'dsl_text=[A]->[B]'
 
-
+yuml-get:
+	curl -X GET https://yuml.me/$(id).png --output yuml.png
 
 	 
