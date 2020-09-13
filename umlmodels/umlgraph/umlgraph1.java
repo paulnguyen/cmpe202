@@ -1,3 +1,14 @@
+/**
+ * Attribute and operation visility
+ * UML User Guide p. 123
+ *
+ * @opt operations
+ * @opt attributes
+ * @opt types
+ * @opt visibility
+ * @hidden
+ */
+class UMLOptions {}
 
 class Person {
         String Name;
@@ -7,3 +18,19 @@ class Employee extends Person {}
 
 class Client extends Person {}
 
+
+/** @hidden */
+class Tool {}
+
+class Toolbar {
+        protected Tool currentSelection;
+        protected Integer toolCount;
+        private String p1 ;
+        public String p2 ;
+        public void pickItem(Integer i) {}
+        public void addTool(Tool t) {}
+        public void removeTool(Integer i) {}
+        public Tool getTool() {}
+        protected void checkOrphans() {}
+        private void compact() {}
+} 

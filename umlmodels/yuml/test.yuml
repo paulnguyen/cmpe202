@@ -1,0 +1,4 @@
+[Customer]<>-orders*>[Order]++-0..*>[LineItem]
+[Order]-[note: Aggregate Root ala DDD{bg:wheat}]
+[≪IDisposable≫;Customer|+forname: string;+surname: string;-password: string|login(user,pass)]
+
