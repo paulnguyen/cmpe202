@@ -1,7 +1,9 @@
-[C1|+test(a1:A1)]uses -.->[<<interface>>;A1],
-[<<interface>>;A1]^-.-[B1],
-[<<interface>>;A1]^-.-[B2],
-[P]^-[B1],
-[P]^-[B2],
-[<<interface>>;A2]^-.-[B2],
-[C2|+test(a2:A2)]uses -.->[<<interface>>;A2]
+[C1]uses -.->[<<interface>>;A1]
+[C2]uses -.->[<<interface>>;A2]^-.-[B2]
+[<<interface>>;A1]^-.-[B1]
+[<<interface>>;A1]^-.-[B2]
+[P]^-[B1]
+[P]^-[B2]
+
+[C1|+test(a1:A1)]
+[C2|+test(a2:A2)]
