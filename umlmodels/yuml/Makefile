@@ -23,7 +23,7 @@ test4:
 	yuml -i test4.yuml -o test4.jpg -f jpg -t class -s scruffy 
 
 test5:
-	yuml -i test5yuml -o test5.jpg -f jpg -t class -s scruffy 
+	yuml -i test5.yuml -o test5.jpg -f jpg -t class -s scruffy 
 
 yuml-post:
 	curl -X POST https://yuml.me/diagram/scruffy/class -F 'dsl_text=[A]->[B]'
