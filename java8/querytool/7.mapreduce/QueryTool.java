@@ -67,7 +67,7 @@ public class QueryTool {
       	Filter odds  = (a) -> ((Integer.parseInt(a)) % 2) != 0;		
         
         // Java's built-in iterator
-        ArrayList<String> mapset = q.map(dataset, evens) ;
+        ArrayList<String> mapset = q.map(dataset, (a) -> true) ;
         System.out.println( "\nMap..." ) ;
 		mapset.forEach( e -> System.out.println(e)) ;
 
@@ -77,7 +77,7 @@ public class QueryTool {
 
 		// Reduce		
         System.out.println( "\nReduce..." ) ;
-        int sum = q.reduce(mapset, sumdiv2 ) ;
+        int sum = q.reduce(mapset, sumfunc ) ;
         System.out.println( sum ) ;
 		
 		

@@ -10,7 +10,7 @@ public class HelloJavaClosure {
     }
   
     public HelloWorld sayHello() {
-        
+       String message = "Tout Le Monde" ; 
        return new HelloWorld() {
             // Annnonymous Inner Class has access to Instance Variable
             public void greet() {
@@ -20,10 +20,12 @@ public class HelloJavaClosure {
     }
 
     public static void main(String[] args) {
-        String message = "Tout Le Monde";
+
         HelloJavaClosure myApp = new HelloJavaClosure();
 
         // Which "message" will be printed?
-        myApp.sayHello().greet() ;
+        HelloWorld h = myApp.sayHello() ;
+        h.greet() ;
+        
     }            
 }
