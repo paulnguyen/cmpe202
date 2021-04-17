@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<alt abstract="true" mandatory="true" name="FeatureIDEAutoFactoryExample">
+				<feature mandatory="true" name="Prius"/>
+				<feature mandatory="true" name="Volvo"/>
+				<feature mandatory="true" name="Tesla"/>
+			</alt>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

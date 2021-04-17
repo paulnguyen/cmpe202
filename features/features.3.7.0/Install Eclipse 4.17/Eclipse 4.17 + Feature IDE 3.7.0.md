@@ -14,25 +14,14 @@
 
 # Resources
 
-* Eclipse 4.5.2 + Feature IDE 3.0.0 (Bundle Downloads)
-
-	* https://featureide.github.io/
-		
-![Install](./images/eclipse-install.png)
-
-* AspectJ AJDT Tools Installation (Update Site)
-
-	* http://download.eclipse.org/tools/ajdt/45/dev/update
-
-![Install](./images/ajdt-install.png)
-
-![Install](./images/ajdt-versions.png)	
-
-* FeatureIDE 3.0.0 based on Eclipse 4.5.2 (Update Site)
-
-	* http://featureide.cs.ovgu.de/update/v3/
-
-
-![Install](./images/featureide-install.png)
+* Eclipse 4.17 + Feature IDE 3.7.0 (Bundle Downloads)
 	
+	* Windows 64-Bit: 
+		* https://github.com/FeatureIDE/FeatureIDE/releases/download/v3.7.0/eclipse4.17.0committers-featureide3.7.0-win64.zip
+	* Linux 64-Bit:  
+		* https://github.com/FeatureIDE/FeatureIDE/releases/download/v3.7.0/eclipse4.17.0committers-featureide3.7.0-linux64.zip
+	* Mac OS X 64-Bit: 
+		* https://github.com/FeatureIDE/FeatureIDE/releases/download/v3.7.0/eclipse4.17.0committers-featureide3.7.0-macosx64.zip
+
+
 		

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="GumballMachine">
+				<description>
+					
+				</description>
+				<alt abstract="true" mandatory="true" name="MODEL">
+					<description>
+						
+					</description>
+					<alt mandatory="true" name="CRANKMODEL">
+						<description>
+							
+						</description>
+						<feature mandatory="true" name="ONEQTR">
+							<description>
+								
+							</description>
+						</feature>
+						<feature mandatory="true" name="TWOQTR">
+							<description>
+								
+							</description>
+						</feature>
+					</alt>
+					<feature mandatory="true" name="SLOTMODEL">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+				<alt abstract="true" mandatory="true" name="COST">
+					<description>
+						
+					</description>
+					<feature mandatory="true" name="COST25">
+						<description>
+							
+						</description>
+					</feature>
+					<feature mandatory="true" name="COST50">
+						<description>
+							
+						</description>
+					</feature>
+				</alt>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>ONEQTR</var>
+					<var>COST25</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>TWOQTR</var>
+					<var>COST50</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
