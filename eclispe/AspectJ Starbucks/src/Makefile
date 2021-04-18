@@ -11,6 +11,3 @@ aspects:
 
 run:
 	java Main
-
-
-
