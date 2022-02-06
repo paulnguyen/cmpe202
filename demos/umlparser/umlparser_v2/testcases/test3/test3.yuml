@@ -1,0 +1,5 @@
+
+[ClassA]^-[ClassB]
+
+[ClassA|+message:String;-bark:String|+testMethod():void]
+[ClassB|-hello:String]

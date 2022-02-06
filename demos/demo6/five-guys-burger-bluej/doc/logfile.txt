@@ -1,0 +1,36 @@
+Class documentation
+<---- javadoc command: ---->
+/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/JDK/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+11
+-classpath
+/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/junit-4.11.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/hamcrest-core-1.3.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/lang-stride.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.base.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.controls.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.fxml.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.graphics.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.media.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.properties.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.swing.jar:/private/var/folders/jy/b7p5x8ss79q1g34yrr20crz80000gn/T/AppTranslocation/59BC1DD3-9612-43D1-BED0-8609A1C538DE/d/BlueJ.app/Contents/Resources/Java/javafx/lib/javafx.web.jar:/Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution
+-d
+/Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/Component.java
+<---- end of javadoc command ---->
+Loading source file /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/Component.java...
+Constructing Javadoc information...
+Standard Doclet version 11.0.2
+Building tree for all the packages and classes...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/Component.html...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/package-summary.html...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/allclasses.html...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/allclasses.html...
+Generating /Users/pnguyen/Desktop/GIT/gitprivate/code/202-labwork/202-lab6/five-guys-burger-bluej-solution/doc/index.html...

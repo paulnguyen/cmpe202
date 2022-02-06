@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0" name="hellouml" URI="hellouml/hellouml">
+  <eAnnotations xmi:id="_com.abstratt2Fmdd2F" source="com.abstratt/mdd/">
+    <details xmi:id="_com.abstratt2Fmdd2F-_details.0" key="dateCreated" value="2017/01/22 01:16:39 644 -0800"/>
+  </eAnnotations>
+  <packageImport xmi:id="_packageImport.0">
+    <importedPackage xmi:type="uml:Model" href="pathmap://MDD_LIBRARIES/mdd_types.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:DataType" xmi:id="Money" name="Money">
+    <eAnnotations xmi:id="Money-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Money-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="Address" name="Address">
+    <eAnnotations xmi:id="Address-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Address-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="Order" name="Order">
+    <eAnnotations xmi:id="Order-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Order-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="Order-dateReceived" name="dateReceived" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Date"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Order-dateReceived-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-dateReceived-_upperValue" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Order-isPrepaid" name="isPrepaid" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-isPrepaid-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-isPrepaid-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Order-number" name="number" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-number-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-number-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Order-price" name="price" visibility="private" type="Money">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-price-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-price-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Order-cust" name="cust" visibility="public" type="Customer" association="_packagedElement.3">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Order-cust-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Order-cust-_upperValue" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="Order-dispatch" name="dispatch" visibility="public"/>
+    <ownedOperation xmi:id="Order-close" name="close" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_packagedElement.3" memberEnd="Order-cust _packagedElement.3-_ownedEnd.0">
+    <ownedEnd xmi:id="_packagedElement.3-_ownedEnd.0" type="Order" association="_packagedElement.3">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_packagedElement.3-_ownedEnd.0-_lowerValue"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="OrderLine" name="OrderLine">
+    <eAnnotations xmi:id="OrderLine-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="OrderLine-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="OrderLine-quantity" name="quantity" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLine-quantity-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLine-quantity-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="OrderLine-price" name="price" visibility="private" type="Money">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLine-price-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLine-price-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="OrderLines" name="OrderLines" memberEnd="OrderLines-lineitems OrderLines-order" navigableOwnedEnd="OrderLines-lineitems OrderLines-order">
+    <ownedEnd xmi:id="OrderLines-lineitems" name="lineitems" type="OrderLine" association="OrderLines">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="OrderLines-lineitems-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLines-lineitems-_upperValue" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="OrderLines-order" name="order" type="Order" association="OrderLines">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLines-order-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLines-order-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="Product" name="Product">
+    <eAnnotations xmi:id="Product-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Product-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <interfaceRealization xmi:id="Product-_interfaceRealization.0" client="Product" supplier="IPriceObserver" contract="IPriceObserver"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="OrderLineProduct" name="OrderLineProduct" memberEnd="OrderLineProduct-line OrderLineProduct-orders" navigableOwnedEnd="OrderLineProduct-line OrderLineProduct-orders">
+    <ownedEnd xmi:id="OrderLineProduct-line" name="line" type="Product" association="OrderLineProduct">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLineProduct-line-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLineProduct-line-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedEnd>
+    <ownedEnd xmi:id="OrderLineProduct-orders" name="orders" type="OrderLine" association="OrderLineProduct">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="OrderLineProduct-orders-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="OrderLineProduct-orders-_upperValue" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="IPriceObserver" name="IPriceObserver">
+    <eAnnotations xmi:id="IPriceObserver-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="IPriceObserver-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="TaxCalc" name="TaxCalc">
+    <eAnnotations xmi:id="TaxCalc-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="TaxCalc-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_packagedElement.10" client="TaxCalc" supplier="IPriceObserver"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="Customer" name="Customer">
+    <eAnnotations xmi:id="Customer-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Customer-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="Customer-name" name="name" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-name-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-name-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Customer-address" name="address" visibility="private" type="Address">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-address-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-address-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="Customer-orders" name="orders" visibility="public" type="Order" association="_packagedElement.12">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Customer-orders-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-orders-_upperValue" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="Customer-getCreditRating" name="getCreditRating" visibility="public">
+      <ownedParameter xmi:id="Customer-getCreditRating-_ownedParameter.0" direction="return">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-getCreditRating-_ownedParameter.0-_lowerValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </lowerValue>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Customer-getCreditRating-_ownedParameter.0-_upperValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </upperValue>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_packagedElement.12" memberEnd="Customer-orders _packagedElement.12-_ownedEnd.0">
+    <ownedEnd xmi:id="_packagedElement.12-_ownedEnd.0" type="Customer" association="_packagedElement.12">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_packagedElement.12-_ownedEnd.0-_lowerValue"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="CorporateCustomer" name="CorporateCustomer">
+    <eAnnotations xmi:id="CorporateCustomer-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="CorporateCustomer-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <generalization xmi:id="CorporateCustomer-_generalization.0" general="Customer"/>
+    <ownedAttribute xmi:id="CorporateCustomer-contactName" name="contactName" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-contactName-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-contactName-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="CorporateCustomer-creditRating" name="creditRating" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-creditRating-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-creditRating-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="CorporateCustomer-creditLimit" name="creditLimit" visibility="private" type="Money">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-creditLimit-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-creditLimit-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="CorporateCustomer-salesRep" name="salesRep" visibility="public" type="Employee" association="_packagedElement.14">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="CorporateCustomer-salesRep-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-salesRep-_upperValue" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="CorporateCustomer-billForMonth" name="billForMonth" visibility="public">
+      <ownedParameter xmi:id="CorporateCustomer-billForMonth-m" name="m" effect="create">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-billForMonth-m-_lowerValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </lowerValue>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="CorporateCustomer-billForMonth-m-_upperValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </upperValue>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="CorporateCustomer-remind" name="remind" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_packagedElement.14" memberEnd="CorporateCustomer-salesRep _packagedElement.14-_ownedEnd.0">
+    <ownedEnd xmi:id="_packagedElement.14-_ownedEnd.0" type="CorporateCustomer" association="_packagedElement.14">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_packagedElement.14-_ownedEnd.0-_lowerValue"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="PersonalCustomer" name="PersonalCustomer">
+    <eAnnotations xmi:id="PersonalCustomer-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="PersonalCustomer-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+    <generalization xmi:id="PersonalCustomer-_generalization.0" general="Customer"/>
+    <ownedAttribute xmi:id="PersonalCustomer-creditCardNumber" name="creditCardNumber" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="PersonalCustomer-creditCardNumber-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="PersonalCustomer-creditCardNumber-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="Employee" name="Employee">
+    <eAnnotations xmi:id="Employee-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Employee-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="SalesRegion" name="SalesRegion">
+    <eAnnotations xmi:id="SalesRegion-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="SalesRegion-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="AssignedRegion" name="AssignedRegion" memberEnd="AssignedRegion-territory AssignedRegion-assigned" navigableOwnedEnd="AssignedRegion-territory AssignedRegion-assigned">
+    <ownedEnd xmi:id="AssignedRegion-territory" name="territory" type="SalesRegion" association="AssignedRegion">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="AssignedRegion-territory-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="AssignedRegion-territory-_upperValue" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="AssignedRegion-assigned" name="assigned" type="Employee" association="AssignedRegion">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="AssignedRegion-assigned-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="AssignedRegion-assigned-_upperValue" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="SalesReport" name="SalesReport">
+    <eAnnotations xmi:id="SalesReport-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="SalesReport-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="hellouml.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_packagedElement.20" client="SalesReport" supplier="SalesRegion"/>
+  <profileApplication xmi:id="_profileApplication.0">
+    <eAnnotations xmi:id="_profileApplication.0-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://MDD_PROFILES/mdd_extensions.uml#_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-mdd_extensions"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDD_PROFILES/mdd_extensions.uml#_0"/>
+  </profileApplication>
+</uml:Package>

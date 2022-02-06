@@ -1,0 +1,9 @@
+
+[ClassZ]^-[ClassY]
+[ClassZ]^-[ClassX]
+[ClassZ]^-[ClassW]
+
+[ClassZ|+mail:String;-shout:String|+testPublicMethod():void]
+[ClassY|-goodbye:String]
+[ClassX|-sayonara:String]
+[ClassW|-adios:String|+getGoodbye():String;+setGoodbye(z:String):void;]

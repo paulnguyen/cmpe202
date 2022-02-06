@@ -1,0 +1,56 @@
+
+[Customer]<>-orders*>[Order]++-0..*>[LineItem]
+[Order]-[note: Aggregate Root ala DDD{bg:wheat}]
+[≪IDisposable≫;Customer|+forname: string;+surname: string;-password: string|login(user,pass)]
+
+[A|-x:int;-y:int［*］]1-0..*[B]
+[A]-1[C]
+[A]-*[D]
+
+[A|-x:int; - y: int［*］| +sendMessage ( y:String); +void hello()]1-0..*[B]
+[A {bg:red}]--1[C]
+[A]--*[D]
+[A]-.-[note: error {bg:yellow}]
+
+[A]1-0..*[B]
+[A]-1[C]
+[A]-*[D]
+[A|-x:int;-y:int［*］]
+
+[A]
+[B]
+[C]
+[D]
+[A|-x:int;-y:int(*)]
+[A]1-0..*[B]
+[A]-1[C]
+[A]-*[D]
+
+private String str ;
+public String getStr() { return this.str ; }
+public void   setStr(String value) { this.str = value ; }
+	
+[Hello2|-str:String|+getStr();+setStr(value:String)]
+[Hello1|+strString]
+
+
+Class
+
+[Customer]->[Order]               // Association
+[Customer]<>->[Order]             // Aggregation
+[Customer]++->[Order]             // Composition
+[Customer]1-0..1>[Order]          // Cardinality
+[Customer]1-0..orders 1>[Order]   // Assoc Labels
+[Customer]-.-[note: DAO]          // Notes
+[Customer]^[Member]               // Inheritance
+[Customer|name;address|save()]    // Properties
+[≪IDisposable≫;Customer]          // Interface
+[Customer|var arr［］ ]            // Brackets
+[Customer {bg:green}]             // Colour
+
+Also See:
+
+https://yuml.me/diagram/scruffy/class/samples
+
+
+      

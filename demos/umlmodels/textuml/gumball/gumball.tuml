@@ -1,0 +1,48 @@
+package gumball; 
+import mdd_types;
+
+datatype int
+end ;
+
+interface State
+	operation insertQuarter() ;
+	operation ejectQuarter() ;
+	operation turnCrank() ;
+	operation dispense() ;
+end ;
+
+class SoldOutState implements State
+end ;
+
+class SoldState implements State
+end ;
+
+class HasQuarterState implements State
+end ;
+
+class NoQuarterState implements State
+end ;
+
+class GumballMachine
+	public operation GumballMachine() ;
+	public operation insertQuarter() ;
+	public operation ejectQuarter() ;
+	public operation turnCrank() ;
+	public operation dispense() ;
+	protected operation setState( s : State ) ;
+	protected operation releaseBall() ;
+	protected operation getCount() : int ;
+	protected operation refill( c : int ) ;
+	public operation getState() : State ;
+	public operation getSoldOutState() : State ;
+	public operation getNoQuarterState() : State ;
+	public operation getHasQuarterState() : State ;
+	public operation getSoldState() : State ;
+end ;
+
+association GumballMachineState
+	navigable role states : State[*] ;
+	navigable role machine : GumballMachine[1] ;
+end ;
+
+end.

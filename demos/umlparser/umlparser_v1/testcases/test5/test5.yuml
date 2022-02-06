@@ -1,0 +1,17 @@
+
+[<<interface>>Component]^-.-[ConcreteComponent]
+[<<interface>>Component]^-.-[Decorator]
+[Tester]uses -.->[<<interface>>Component]
+[Decorator]uses -.->[<<interface>>Component]
+[Decorator]-[<<interface>>Component]
+[ConcreteDecoratorA]uses -.->[<<interface>>Component]
+[ConcreteDecoratorB]uses -.->[<<interface>>Component]
+[Decorator]^-[ConcreteDecoratorA]
+[Decorator]^-[ConcreteDecoratorB]
+
+[<<interface>>Component|+operation():String]
+[ConcreteComponent|+operation():String]
+[Decorator|+Decorator(c:Component);+operation():String]
+[ConcreteDecoratorA|-addedState:String|+ConcreteDecoratorA(c:Component);+operation():String;]
+[ConcreteDecoratorB|-addedState:String|+ConcreteDecoratorB(c:Component);+operation():String;]
+[Tester|+main(args:String(*)):void;]

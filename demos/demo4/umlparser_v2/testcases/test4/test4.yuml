@@ -1,0 +1,17 @@
+
+[<<interface>>;Observer]^-.-[ConcreteObserver]
+[<<interface>>;Subject]^-.-[ConcreteSubject]
+[ConcreteSubject]^-[TheEconomy]
+[<<interface>>;Observer]<-.- uses[ConcreteSubject]
+[<<interface>>;Observer]<*-[ConcreteSubject]
+[ConcreteObserver]^-[Optimist]
+[ConcreteObserver]^-[Pessimist]
+[ConcreteSubject]-[ConcreteObserver]
+
+[<<interface>>;Observer|+update():void]
+[ConcreteObserver|+ConcreteObserver(theSubject:ConcreteSubject);+update():void;+showState():void]
+[<<interface>>;Subject|+attach(obj:Observer):void;+detach(obj:Observer):void;+notifyObservers():void;]
+[ConcreteSubject|-subjectState:String|+getState():String;+setState(status:String):void;+showState():void;]
+[TheEconomy|+TheEconomy()]
+[Optimist|+Optimist(sub:ConcreteSubject);+update():void;]
+[Pessimist|+Pessimist(sub:ConcreteSubject);+update():void;]

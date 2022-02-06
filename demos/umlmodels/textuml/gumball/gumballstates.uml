@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0" name="gumballstates" URI="gumball/gumballstates">
+  <eAnnotations xmi:id="_com.abstratt2Fmdd2F" source="com.abstratt/mdd/">
+    <details xmi:id="_com.abstratt2Fmdd2F-_details.0" key="dateCreated" value="2017/01/22 06:39:39 792 -0800"/>
+  </eAnnotations>
+  <packageImport xmi:id="_packageImport.0">
+    <importedPackage xmi:type="uml:Model" href="pathmap://MDD_LIBRARIES/mdd_types.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="GumballMachine" name="GumballMachine">
+    <eAnnotations xmi:id="GumballMachine-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="GumballMachine-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="gumballstates.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="GumballMachine-count_gumballs" name="count_gumballs" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="GumballMachine-count_gumballs-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="GumballMachine-count_gumballs-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="GumballMachine-current_state" name="current_state" visibility="private" type="GumballMachine-GumballState">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="GumballMachine-current_state-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="GumballMachine-current_state-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="GumballMachine-GumballState" name="GumballState">
+      <region xmi:id="GumballMachine-GumballState-GumballState" name="GumballState">
+        <transition xmi:id="GumballMachine-GumballState-GumballState-_transition.0" source="GumballMachine-GumballState-GumballState-NoQuarterState" target="GumballMachine-GumballState-GumballState-HasQuarterState">
+          <trigger xmi:id="GumballMachine-GumballState-GumballState-_transition.0-_trigger.0" event="_packagedElement.1"/>
+        </transition>
+        <transition xmi:id="GumballMachine-GumballState-GumballState-_transition.1" source="GumballMachine-GumballState-GumballState-HasQuarterState" target="GumballMachine-GumballState-GumballState-NoQuarterState">
+          <trigger xmi:id="GumballMachine-GumballState-GumballState-_transition.1-_trigger.0" event="_packagedElement.2"/>
+        </transition>
+        <transition xmi:id="GumballMachine-GumballState-GumballState-_transition.2" source="GumballMachine-GumballState-GumballState-HasQuarterState" target="GumballMachine-GumballState-GumballState-SoldState">
+          <trigger xmi:id="GumballMachine-GumballState-GumballState-_transition.2-_trigger.0" event="_packagedElement.3"/>
+        </transition>
+        <transition xmi:id="GumballMachine-GumballState-GumballState-_transition.3" source="GumballMachine-GumballState-GumballState-SoldState" target="GumballMachine-GumballState-GumballState-SoldOutState">
+          <trigger xmi:id="GumballMachine-GumballState-GumballState-_transition.3-_trigger.0" event="_packagedElement.4"/>
+        </transition>
+        <transition xmi:id="GumballMachine-GumballState-GumballState-_transition.4" source="GumballMachine-GumballState-GumballState-SoldState" target="GumballMachine-GumballState-GumballState-NoQuarterState">
+          <trigger xmi:id="GumballMachine-GumballState-GumballState-_transition.4-_trigger.0" event="_packagedElement.5"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="GumballMachine-GumballState-GumballState-NoQuarterState" name="NoQuarterState"/>
+        <subvertex xmi:type="uml:State" xmi:id="GumballMachine-GumballState-GumballState-HasQuarterState" name="HasQuarterState"/>
+        <subvertex xmi:type="uml:State" xmi:id="GumballMachine-GumballState-GumballState-SoldOutState" name="SoldOutState"/>
+        <subvertex xmi:type="uml:State" xmi:id="GumballMachine-GumballState-GumballState-SoldState" name="SoldState"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="GumballMachine-insertQuarter" name="insertQuarter" visibility="public"/>
+    <ownedOperation xmi:id="GumballMachine-ejectQuarter" name="ejectQuarter" visibility="public"/>
+    <ownedOperation xmi:id="GumballMachine-turnCrank" name="turnCrank" visibility="public"/>
+    <ownedOperation xmi:id="GumballMachine-dispense" name="dispense" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_packagedElement.1" operation="GumballMachine-insertQuarter"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_packagedElement.2" operation="GumballMachine-ejectQuarter"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_packagedElement.3" operation="GumballMachine-turnCrank"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_packagedElement.4" operation="GumballMachine-dispense"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_packagedElement.5" operation="GumballMachine-dispense"/>
+  <profileApplication xmi:id="_profileApplication.0">
+    <eAnnotations xmi:id="_profileApplication.0-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://MDD_PROFILES/mdd_extensions.uml#_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-mdd_extensions"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDD_PROFILES/mdd_extensions.uml#_0"/>
+  </profileApplication>
+</uml:Package>

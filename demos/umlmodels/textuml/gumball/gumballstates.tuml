@@ -1,0 +1,34 @@
+package gumballstates; 
+import mdd_types;
+
+class GumballMachine
+	private attribute count_gumballs : Integer ;
+	private attribute current_state : GumballState ;
+	
+	public operation insertQuarter() ;
+	public operation ejectQuarter() ;
+	public operation turnCrank() ;
+	public operation dispense() ;
+	
+	statemachine GumballState
+		initial state NoQuarterState
+			transition on call(insertQuarter) to HasQuarterState ;
+		end ;
+		state HasQuarterState
+			transition on call(ejectQuarter) to NoQuarterState ;
+			transition on call(turnCrank) to SoldState ;
+		end ;
+		state SoldOutState
+		end ;
+		state SoldState
+			transition on call(dispense) to SoldOutState ;
+			transition on call(dispense) to NoQuarterState ;
+			/* transition on call(dispense) to SoldOutState when { self.count_gumballs <= 0 } ;
+			   transition on call(dispense) to NoQuarterState when { self.count_gumballs > 0 } ; 
+			*/
+		end ;
+	end ;
+end ;
+
+
+end.

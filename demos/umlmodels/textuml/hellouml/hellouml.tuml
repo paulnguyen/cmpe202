@@ -1,0 +1,87 @@
+package hellouml; 
+
+import mdd_types;
+
+datatype Money
+end ;
+
+datatype Address
+end ;
+
+class Order
+	private attribute dateReceived : Date[1] ;
+	private attribute isPrepaid : Boolean ;
+	private attribute number : String ;
+	private attribute price : Money ;
+	reference cust : Customer [1] ;
+	operation dispatch() ;
+	operation close() ;
+	/*
+		if Order.customer.getCreditRating is "poor", then
+		Order.isPrepaid must be true
+	*/
+end ;
+
+class OrderLine
+	private attribute quantity : Integer ;
+	private attribute price : Money ;
+end ;
+
+association OrderLines
+	navigable role lineitems : OrderLine[*] ;
+	navigable role order : Order ;
+end ;
+
+class Product implements IPriceObserver
+end;
+
+association OrderLineProduct
+	navigable role line : Product ;
+	navigable role orders : OrderLine[*] ;
+end ;
+
+interface IPriceObserver
+end ;
+
+class TaxCalc
+	dependency IPriceObserver ;
+end ;
+
+class Customer
+	private attribute name : String ;
+	private attribute address : Address ;
+	reference orders : Order[*] ;
+	operation getCreditRating() : String ;
+end ;
+
+class CorporateCustomer specializes Customer
+	private attribute contactName : String ;
+	private attribute creditRating : Integer ;
+	private attribute creditLimit : Money ;
+	reference salesRep : Employee[1] ;
+	operation billForMonth( m : Integer ) ;
+	operation remind() ;
+end ;	
+
+class PersonalCustomer specializes Customer
+	private attribute creditCardNumber : String ;
+	/* getCreditRating() == "poor" */
+end ;
+
+class Employee
+end ;
+
+class SalesRegion
+end ;
+
+association AssignedRegion
+	navigable role territory : SalesRegion[1] ;
+	navigable role assigned : Employee[*] ;
+end ;
+
+class SalesReport
+	dependency SalesRegion ;
+end ;
+
+
+end.

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0" name="textuml2" URI="hellouml/textuml2">
+  <eAnnotations xmi:id="_com.abstratt2Fmdd2F" source="com.abstratt/mdd/">
+    <details xmi:id="_com.abstratt2Fmdd2F-_details.0" key="dateCreated" value="2017/01/22 01:16:39 649 -0800"/>
+  </eAnnotations>
+  <packageImport xmi:id="_packageImport.0">
+    <importedPackage xmi:type="uml:Model" href="pathmap://MDD_LIBRARIES/mdd_types.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="Parent" name="Parent">
+    <eAnnotations xmi:id="Parent-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Parent-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="Hello" name="Hello">
+    <eAnnotations xmi:id="Hello-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Hello-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+    <generalization xmi:id="Hello-_generalization.0" general="Parent"/>
+    <ownedAttribute xmi:id="Hello-msg" name="msg" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Hello-msg-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Hello-msg-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_packagedElement.2" client="Hello" supplier="Message"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="hello_world" name="hello_world" memberEnd="hello_world-h hello_world-w" navigableOwnedEnd="hello_world-h hello_world-w">
+    <ownedEnd xmi:id="hello_world-h" name="h" type="World" association="hello_world">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="hello_world-h-_lowerValue" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="hello_world-h-_upperValue" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="hello_world-w" name="w" type="Hello" association="hello_world">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="hello_world-w-_lowerValue"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="hello_world-w-_upperValue" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="World" name="World">
+    <eAnnotations xmi:id="World-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="World-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="World-msg" name="msg" visibility="private">
+      <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="World-msg-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="World-msg-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="World-_interfaceRealization.0" client="World" supplier="Message" contract="Message"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="Message" name="Message">
+    <eAnnotations xmi:id="Message-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="Message-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+    <ownedOperation xmi:id="Message-display" name="display" visibility="public">
+      <ownedParameter xmi:id="Message-display-m" name="m" effect="create">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Message-display-m-_lowerValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </lowerValue>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Message-display-m-_upperValue" value="1">
+          <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+        </upperValue>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="A" name="A">
+    <eAnnotations xmi:id="A-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="A-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="A-b" name="b" visibility="public" type="B" association="AB">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A-b-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A-b-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="B" name="B">
+    <eAnnotations xmi:id="B-_com.abstratt2Fmdd2Funit" source="com.abstratt/mdd/unit">
+      <details xmi:id="B-_com.abstratt2Fmdd2Funit-_details.0" key="name" value="textuml2.tuml"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="B-a" name="a" visibility="public" type="A" association="AB">
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="B-a-_lowerValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </lowerValue>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="B-a-_upperValue" value="1">
+        <type xmi:type="uml:Class" href="pathmap://MDD_LIBRARIES/mdd_types.uml#Integer"/>
+      </upperValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="AB" name="AB" memberEnd="A-b B-a"/>
+  <profileApplication xmi:id="_profileApplication.0">
+    <eAnnotations xmi:id="_profileApplication.0-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://MDD_PROFILES/mdd_extensions.uml#_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-mdd_extensions"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDD_PROFILES/mdd_extensions.uml#_0"/>
+  </profileApplication>
+</uml:Package>

@@ -1,0 +1,13 @@
+
+[W1]uses -.->[<<interface>>;Z1]
+[<<interface>>;Z1]^-.-[Y1]
+[<<interface>>;Z1]^-.-[Y2]
+[O]^-[Y1]
+[O]^-[Y2]
+[O]^-[Y3]
+[<<interface>>;Z2]^-.-[Y2]
+[<<interface>>;Z2]^-.-[Y3]
+[W2]uses -.->[<<interface>>;Z2]
+
+[W1|+test(z1:Z1):void]
+[W2|+test(z2:Z2):void]
