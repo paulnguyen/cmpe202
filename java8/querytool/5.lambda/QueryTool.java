@@ -51,7 +51,7 @@ public class QueryTool {
       	Filter evens = (a) -> ((Integer.parseInt(a)) % 2) == 0;		
       	Filter odds  = (a) -> ((Integer.parseInt(a)) % 2) != 0;		
         
-        ArrayList<String> mapset = q.map(dataset, odds ) ;
+        ArrayList<String> mapset = q.map(dataset, evens ) ;
         for (String item : mapset ) {
     		System.out.println( item ) ;
     	}
