@@ -23,11 +23,6 @@ test:
 build: compile
 	gradle shadowJar
 
-spotbugs:
-	gradle spotbugsMain
-
-codesmells:
-	gradle smartsmells
 
 reset:
 	mkdir -p output/test0 
