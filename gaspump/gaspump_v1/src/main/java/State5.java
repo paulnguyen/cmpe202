@@ -10,7 +10,7 @@ public class State5 implements State {
 	public String message1() { return "Select Grade & Pump Gas..." ; }
 	public String message2() { return "" ; }
 	
-	public void key( String keypad ) { screen.setState(6) ; }
+	public void key( String keypad ) { screen.setState(7) ; }
 
 	public String A() { return "" ; }
 	public String B() { return "" ; }

@@ -12,19 +12,19 @@ public class State0 implements State {
 	
 	public void key( String keypad ) { }
 
-	public String A() { return "Credit" ; }
-	public String B() { return "Debit" ; }
-	public String C() { return "" ; }
-	public String D() { return "" ; }
+	public String A() { return "" ; }
+	public String B() { return "" ; }
+	public String C() { return "Credit" ; }
+	public String D() { return "Debit" ; }
 	public String E() { return "" ; }
 	public String F() { return "" ; }
 	public String G() { return "" ; }
 	public String H() { return "" ; }
 
-	public void doA() { screen.setState(1) ; }
-	public void doB() { screen.setState(2) ; }
-	public void doC() { }
-	public void doD() { }
+	public void doA() { }
+	public void doB() { }
+	public void doC() { screen.setState(1) ; }
+	public void doD() { screen.setState(2) ; }
 	public void doE() { }
 	public void doF() { }
 	public void doG() { }

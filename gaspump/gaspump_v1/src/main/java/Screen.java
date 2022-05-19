@@ -36,7 +36,7 @@ public class Screen implements IScreen
     private State CW = new StateCarWash(this) ;  
     private State CWP = new StateCarWashPackage(this) ;
 
-    private State current = CW ;
+    private State current = S6 ;
 
     public void setState( int new_state ) {
         switch ( new_state ) {
