@@ -66,6 +66,13 @@ public class GumballMachine {
 		GumballMachine m = new GumballMachine(10) ;
 		Class gmClass = m.getClass() ;
 
+
+        System.out.println( "\nCONSTRUCTORS:" ) ;
+        Constructor[] allConstructors = gmClass.getDeclaredConstructors();
+        for (Constructor ctor : allConstructors) {
+            System.out.format("%s%n", ctor.toGenericString());
+        }
+
         System.out.println( "\nFIELDS:" ) ;
         Field[] fields = gmClass.getDeclaredFields();
         for (Field f : fields) {
