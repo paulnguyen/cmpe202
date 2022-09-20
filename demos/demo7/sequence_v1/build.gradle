@@ -1,0 +1,50 @@
+/*
+
+    gradle: 5.6
+    java: 11.0.10.j9-adpt
+    aspectj: 1.9.5
+
+ */
+
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    // Apply the application plugin to add support for building a CLI application
+    id 'application'
+
+    // https://docs.freefair.io/gradle-plugins/4.1.6/reference
+    // https://github.com/freefair/gradle-plugins (see Compatibility Matrix)
+    id "io.freefair.aspectj" version "4.1.6"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+sourceSets.main.aspectj.srcDir 'src/main/java'
+sourceSets.test.aspectj.srcDir 'src/main/java'
+sourceSets.main.java.srcDirs = files()
+sourceSets.test.java.srcDirs = files()
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:28.0-jre'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+
+    // AspectJ Runtime
+    implementation "org.aspectj:aspectjrt:1.9.5"
+}
+
+application {
+    // Define the main class for the application
+    mainClassName = 'Main'
+}
+

@@ -1,0 +1,50 @@
+Main {
+TheEconomy@342cec9.setState() {
+TheEconomy@342cec9.notifyObservers() {
+}
+}
+TheEconomy@342cec9.attach() {
+}
+TheEconomy@342cec9.attach() {
+}
+TheEconomy@342cec9.setState() {
+TheEconomy@342cec9.notifyObservers() {
+Pessimist@d3126561.update() {
+TheEconomy@342cec9.getState() {
+}
+TheEconomy@342cec9.getState() {
+}
+}
+Optimist@bc191a2e.update() {
+TheEconomy@342cec9.getState() {
+}
+TheEconomy@342cec9.getState() {
+}
+}
+}
+}
+Pessimist@d3126561.showState() {
+}
+Optimist@bc191a2e.showState() {
+}
+TheEconomy@342cec9.setState() {
+TheEconomy@342cec9.notifyObservers() {
+Pessimist@d3126561.update() {
+TheEconomy@342cec9.getState() {
+}
+TheEconomy@342cec9.getState() {
+}
+}
+Optimist@bc191a2e.update() {
+TheEconomy@342cec9.getState() {
+}
+TheEconomy@342cec9.getState() {
+}
+}
+}
+}
+Pessimist@d3126561.showState() {
+}
+Optimist@bc191a2e.showState() {
+}
+}

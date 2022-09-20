@@ -1,0 +1,95 @@
+initial_x_position.label = X position of first object lifeline
+initial_x_position.shortDesc = Where should the first object lifeline be drawn?
+initial_x_position.type = integer
+initial_x_position.value = 5
+
+initial_y_position.label = Y position of first call
+initial_y_position.shortDesc = Where should the call be drawn?
+initial_y_position.type = integer
+initial_y_position.value = 5
+
+method_execution_width.label = Width of method execution bars
+method_execution_width.shortDesc = How wide should the method execution bars be?
+method_execution_width.type = integer
+method_execution_width.value = 8
+
+show_return_types.label = Show Return Types
+show_return_types.shortDesc = Should the diagram show the return types?
+show_return_types.type = boolean
+show_return_types.value = true
+
+background_color.label = Background color for the diagram
+background_color.shortDesc = Background color for the diagram
+background_color.type = color
+background_color.value = 255 255 255
+
+link_text_color.label = Color for method and return types names
+link_text_color.shortDesc = Color for method and return type names
+link_text_color.type = color
+link_text_color.value = 0 0 0
+
+link_color.label = Color for call and return lines
+link_color.shortDesc = Color for call and return lines
+link_color.type = color
+link_color.value = 0 0 0
+
+object_border_color.label = Color of borders round object names
+object_border_color.shortDesc = Color of borders round object names
+object_border_color.type = color
+object_border_color.value = 0 0 0
+
+object_fill_color.label = Color of background of object names
+object_fill_color.shortDesc = Color of background of object names
+object_fill_color.type = color
+object_fill_color.value = 255 255 255
+
+object_text_color.label = Color of object names text
+object_text_color.shortDesc = Color of object names text
+object_text_color.type = color
+object_text_color.value = 0 0 0
+
+object_line_color.label = Color of object life lines
+object_line_color.shortDesc = Color of object life lines
+object_line_color.type = color
+object_line_color.value = 204 204 204
+
+method_fill_color.label = Color of method life times
+method_fill_color.shortDesc = Color of method life times
+method_fill_color.type = color
+method_fill_color.value = 255 255 255
+
+method_border_color.label = Border round method life times
+method_border_color.shortDesc = Border round method life times
+method_border_color.type = color
+method_border_color.value = 0 0 0
+
+selected_fill_color.label = Color of selected method life times
+selected_fill_color.shortDesc = Color of selected method life times
+selected_fill_color.type = color
+selected_fill_color.value = 255 255 204
+
+selected_border_color.label = Border round selected method life times
+selected_border_color.shortDesc = Border selected round method life times
+selected_border_color.type = color
+selected_border_color.value = 0 0 0
+
+text_x_pad.label = Text x padding
+text_x_pad.shortDesc = Padding to left and right of text strings
+text_x_pad.type = integer
+text_x_pad.value = 5
+
+text_y_pad.label = Text y padding
+text_y_pad.shortDesc = Padding above and below text strings
+text_y_pad.type = integer
+text_y_pad.value = 2
+
+object_lifeline_spacing.label = Horizontal gap between object lifelines
+object_lifeline_spacing.shortDesc = Minimum space between object lifelines in diagram
+object_lifeline_spacing.type = integer
+object_lifeline_spacing.value = 5
+
+method_execution_spacing.label = Vertical gap between method executions
+method_execution_spacing.shortDesc = Minimum vertical space between method executions in diagram
+method_execution_spacing.type = integer
+method_execution_spacing.value = 5
+
