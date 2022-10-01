@@ -10,15 +10,15 @@
     {
       "name": "args",
       "type": "[Ljava.lang.String;",
-      "value": "[Ljava.lang.String;@f881616f"
+      "value": "[Ljava.lang.String;@b99b5be4"
     }
   ],
   "nested": [
     {
       "level": 1,
-      "name": "TheEconomy@342cec9",
+      "name": "TheEconomy@190db734",
       "source": "Main",
-      "target": "TheEconomy@342cec9",
+      "target": "TheEconomy@190db734",
       "message": "setState",
       "returns": "",
       "pointcut": "execution(void ConcreteSubject.setState(String))",
@@ -32,9 +32,9 @@
       "nested": [
         {
           "level": 2,
-          "name": "TheEconomy@342cec9",
-          "source": "TheEconomy@342cec9",
-          "target": "TheEconomy@342cec9",
+          "name": "TheEconomy@190db734",
+          "source": "TheEconomy@190db734",
+          "target": "TheEconomy@190db734",
           "message": "notifyObservers",
           "returns": "",
           "pointcut": "execution(void ConcreteSubject.notifyObservers())",
@@ -45,9 +45,9 @@
     },
     {
       "level": 1,
-      "name": "TheEconomy@342cec9",
+      "name": "TheEconomy@190db734",
       "source": "Main",
-      "target": "TheEconomy@342cec9",
+      "target": "TheEconomy@190db734",
       "message": "attach",
       "returns": "",
       "pointcut": "execution(void ConcreteSubject.attach(Observer))",
@@ -55,16 +55,16 @@
         {
           "name": "obj",
           "type": "Observer",
-          "value": "Pessimist@d3126561"
+          "value": "Pessimist@6764f1dd"
         }
       ],
       "nested": []
     },
     {
       "level": 1,
-      "name": "TheEconomy@342cec9",
+      "name": "TheEconomy@190db734",
       "source": "Main",
-      "target": "TheEconomy@342cec9",
+      "target": "TheEconomy@190db734",
       "message": "attach",
       "returns": "",
       "pointcut": "execution(void ConcreteSubject.attach(Observer))",
@@ -72,16 +72,16 @@
         {
           "name": "obj",
           "type": "Observer",
-          "value": "Optimist@bc191a2e"
+          "value": "Optimist@66b22364"
         }
       ],
       "nested": []
     },
     {
       "level": 1,
-      "name": "TheEconomy@342cec9",
+      "name": "TheEconomy@190db734",
       "source": "Main",
-      "target": "TheEconomy@342cec9",
+      "target": "TheEconomy@190db734",
       "message": "setState",
       "returns": "",
       "pointcut": "execution(void ConcreteSubject.setState(String))",
@@ -95,9 +95,9 @@
       "nested": [
         {
           "level": 2,
-          "name": "TheEconomy@342cec9",
-          "source": "TheEconomy@342cec9",
-          "target": "TheEconomy@342cec9",
+          "name": "TheEconomy@190db734",
+          "source": "TheEconomy@190db734",
+          "target": "TheEconomy@190db734",
           "message": "notifyObservers",
           "returns": "",
           "pointcut": "execution(void ConcreteSubject.notifyObservers())",
@@ -105,9 +105,9 @@
           "nested": [
             {
               "level": 3,
-              "name": "Pessimist@d3126561",
-              "source": "TheEconomy@342cec9",
-              "target": "Pessimist@d3126561",
+              "name": "Pessimist@6764f1dd",
+              "source": "TheEconomy@190db734",
+              "target": "Pessimist@6764f1dd",
               "message": "update",
               "returns": "",
               "pointcut": "execution(void Pessimist.update())",
@@ -115,9 +115,9 @@
               "nested": [
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Pessimist@d3126561",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Pessimist@6764f1dd",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "The New iPad is out today",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -126,9 +126,9 @@
                 },
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Pessimist@d3126561",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Pessimist@6764f1dd",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "The New iPad is out today",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -139,9 +139,9 @@
             },
             {
               "level": 3,
-              "name": "Optimist@bc191a2e",
-              "source": "TheEconomy@342cec9",
-              "target": "Optimist@bc191a2e",
+              "name": "Optimist@66b22364",
+              "source": "TheEconomy@190db734",
+              "target": "Optimist@66b22364",
               "message": "update",
               "returns": "",
               "pointcut": "execution(void Optimist.update())",
@@ -149,9 +149,9 @@
               "nested": [
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Optimist@bc191a2e",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Optimist@66b22364",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "The New iPad is out today",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -160,9 +160,9 @@
                 },
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Optimist@bc191a2e",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Optimist@66b22364",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "The New iPad is out today",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -177,9 +177,9 @@
     },
     {
       "level": 1,
-      "name": "Pessimist@d3126561",
+      "name": "Pessimist@6764f1dd",
       "source": "Main",
-      "target": "Pessimist@d3126561",
+      "target": "Pessimist@6764f1dd",
       "message": "showState",
       "returns": "",
       "pointcut": "execution(void ConcreteObserver.showState())",
@@ -188,9 +188,9 @@
     },
     {
       "level": 1,
-      "name": "Optimist@bc191a2e",
+      "name": "Optimist@66b22364",
       "source": "Main",
-      "target": "Optimist@bc191a2e",
+      "target": "Optimist@66b22364",
       "message": "showState",
       "returns": "",
       "pointcut": "execution(void ConcreteObserver.showState())",
@@ -199,9 +199,9 @@
     },
     {
       "level": 1,
-      "name": "TheEconomy@342cec9",
+      "name": "TheEconomy@190db734",
       "source": "Main",
-      "target": "TheEconomy@342cec9",
+      "target": "TheEconomy@190db734",
       "message": "setState",
       "returns": "",
       "pointcut": "execution(void ConcreteSubject.setState(String))",
@@ -215,9 +215,9 @@
       "nested": [
         {
           "level": 2,
-          "name": "TheEconomy@342cec9",
-          "source": "TheEconomy@342cec9",
-          "target": "TheEconomy@342cec9",
+          "name": "TheEconomy@190db734",
+          "source": "TheEconomy@190db734",
+          "target": "TheEconomy@190db734",
           "message": "notifyObservers",
           "returns": "",
           "pointcut": "execution(void ConcreteSubject.notifyObservers())",
@@ -225,9 +225,9 @@
           "nested": [
             {
               "level": 3,
-              "name": "Pessimist@d3126561",
-              "source": "TheEconomy@342cec9",
-              "target": "Pessimist@d3126561",
+              "name": "Pessimist@6764f1dd",
+              "source": "TheEconomy@190db734",
+              "target": "Pessimist@6764f1dd",
               "message": "update",
               "returns": "",
               "pointcut": "execution(void Pessimist.update())",
@@ -235,9 +235,9 @@
               "nested": [
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Pessimist@d3126561",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Pessimist@6764f1dd",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "Hey, Its Friday!",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -246,9 +246,9 @@
                 },
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Pessimist@d3126561",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Pessimist@6764f1dd",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "Hey, Its Friday!",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -259,9 +259,9 @@
             },
             {
               "level": 3,
-              "name": "Optimist@bc191a2e",
-              "source": "TheEconomy@342cec9",
-              "target": "Optimist@bc191a2e",
+              "name": "Optimist@66b22364",
+              "source": "TheEconomy@190db734",
+              "target": "Optimist@66b22364",
               "message": "update",
               "returns": "",
               "pointcut": "execution(void Optimist.update())",
@@ -269,9 +269,9 @@
               "nested": [
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Optimist@bc191a2e",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Optimist@66b22364",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "Hey, Its Friday!",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -280,9 +280,9 @@
                 },
                 {
                   "level": 4,
-                  "name": "TheEconomy@342cec9",
-                  "source": "Optimist@bc191a2e",
-                  "target": "TheEconomy@342cec9",
+                  "name": "TheEconomy@190db734",
+                  "source": "Optimist@66b22364",
+                  "target": "TheEconomy@190db734",
                   "message": "getState",
                   "returns": "Hey, Its Friday!",
                   "pointcut": "execution(String ConcreteSubject.getState())",
@@ -297,9 +297,9 @@
     },
     {
       "level": 1,
-      "name": "Pessimist@d3126561",
+      "name": "Pessimist@6764f1dd",
       "source": "Main",
-      "target": "Pessimist@d3126561",
+      "target": "Pessimist@6764f1dd",
       "message": "showState",
       "returns": "",
       "pointcut": "execution(void ConcreteObserver.showState())",
@@ -308,9 +308,9 @@
     },
     {
       "level": 1,
-      "name": "Optimist@bc191a2e",
+      "name": "Optimist@66b22364",
       "source": "Main",
-      "target": "Optimist@bc191a2e",
+      "target": "Optimist@66b22364",
       "message": "showState",
       "returns": "",
       "pointcut": "execution(void ConcreteObserver.showState())",
