@@ -19,9 +19,6 @@ test:
 jar: compile
 	gradle shadowJar
 
-javadoc:
-	gradle javadoc
-	
 checkstyle:
 	gradle check
 	
