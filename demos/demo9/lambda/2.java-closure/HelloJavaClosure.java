@@ -2,7 +2,7 @@
 
 public class HelloJavaClosure {
 
-	private String message = "Hello World" ;
+	//private String message = "Hello World" ;
   
     interface HelloWorld {
         public void greet();
@@ -11,6 +11,7 @@ public class HelloJavaClosure {
     public HelloWorld sayHello() {
         
        return new HelloWorld() {
+            String message = "Hello World" ;
             public void greet() {
                 System.out.println( message );
             }

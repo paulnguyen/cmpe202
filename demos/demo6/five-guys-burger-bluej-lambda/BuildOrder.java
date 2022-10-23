@@ -52,7 +52,7 @@ public class BuildOrder {
         
         IPackerPrintStrategy nosort = (i) -> {  
             i.forEach( d -> { System.out.println( d ); } ) ;
-        } ;	
+        } ;    
 
         IPackerPrintStrategy sort = (i) -> {  
             ArrayList<String> items = new ArrayList<String>()  ;
@@ -65,7 +65,7 @@ public class BuildOrder {
             } ) ;
             Collections.sort(items) ;
             items.forEach( d -> { System.out.println( d ); } ) ;
-        } ;	        
+        } ;            
         
         printPackingSlip( sort ) ;
 
