@@ -1,50 +1,50 @@
 Main {
-TheEconomy@190db734.setState() {
-TheEconomy@190db734.notifyObservers() {
+TheEconomy@d2152c11.setState() {
+TheEconomy@d2152c11.notifyObservers() {
 }
 }
-TheEconomy@190db734.attach() {
+TheEconomy@d2152c11.attach() {
 }
-TheEconomy@190db734.attach() {
+TheEconomy@d2152c11.attach() {
 }
-TheEconomy@190db734.setState() {
-TheEconomy@190db734.notifyObservers() {
-Pessimist@6764f1dd.update() {
-TheEconomy@190db734.getState() {
+TheEconomy@d2152c11.setState() {
+TheEconomy@d2152c11.notifyObservers() {
+Pessimist@cbc257fe.update() {
+TheEconomy@d2152c11.getState() {
 }
-TheEconomy@190db734.getState() {
-}
-}
-Optimist@66b22364.update() {
-TheEconomy@190db734.getState() {
-}
-TheEconomy@190db734.getState() {
+TheEconomy@d2152c11.getState() {
 }
 }
+Optimist@6bddb0f9.update() {
+TheEconomy@d2152c11.getState() {
 }
-}
-Pessimist@6764f1dd.showState() {
-}
-Optimist@66b22364.showState() {
-}
-TheEconomy@190db734.setState() {
-TheEconomy@190db734.notifyObservers() {
-Pessimist@6764f1dd.update() {
-TheEconomy@190db734.getState() {
-}
-TheEconomy@190db734.getState() {
-}
-}
-Optimist@66b22364.update() {
-TheEconomy@190db734.getState() {
-}
-TheEconomy@190db734.getState() {
+TheEconomy@d2152c11.getState() {
 }
 }
 }
 }
-Pessimist@6764f1dd.showState() {
+Pessimist@cbc257fe.showState() {
 }
-Optimist@66b22364.showState() {
+Optimist@6bddb0f9.showState() {
+}
+TheEconomy@d2152c11.setState() {
+TheEconomy@d2152c11.notifyObservers() {
+Pessimist@cbc257fe.update() {
+TheEconomy@d2152c11.getState() {
+}
+TheEconomy@d2152c11.getState() {
+}
+}
+Optimist@6bddb0f9.update() {
+TheEconomy@d2152c11.getState() {
+}
+TheEconomy@d2152c11.getState() {
+}
+}
+}
+}
+Pessimist@cbc257fe.showState() {
+}
+Optimist@6bddb0f9.showState() {
 }
 }
