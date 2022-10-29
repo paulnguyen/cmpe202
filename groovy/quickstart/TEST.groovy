@@ -1,24 +1,17 @@
 
+greeting = 'Hello'
 
-
-greeting='Hello'
-def clos={ param -> println "${greeting} ${param}" }
-clos.call( 'World' )
-
-greeting='Welcome'
-clos.call( 'World' )
-
-
-def demo(c) {
-    def greeting='Bonjour'
-    c.call( 'Ken' )
+def demo() {
+    def greeting = "Bonjour"
+    def closure = { p -> print "${greeting} ${p}\n" }
+    return closure
 }
-demo(clos)
 
-def outer() {
-    def greeting='Goodbye'
-    return { p -> println "${greeting} ${p}" }
-}
-greeting='Welcome'
-clos=outer()
-clos.call( 'Ken' )
+c = demo()
+c.call( 'Ken' )
+println greeting
+
+
+
+
+

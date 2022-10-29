@@ -6,7 +6,7 @@
 greeting = 'Hello'
 
 def demo() {
-	greeting = "Bonjour"
+	def greeting = "Bonjour"
     def closure = { p -> print "${greeting} ${p}\n" }
     return closure
 }
