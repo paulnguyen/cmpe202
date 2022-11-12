@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+
+<html>
+<head>
+    <title>STARBUCKS REST API CLIENT</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+<h1 align="center">STARBUCKS REST API CLIENT</h1>
+
+<!-- FORM SECTION -->
+<form name="form" th:object="${command}" method="post" action="">
+    <p align="center">
+        <br/>
+        <br/>
+        <br/>
+        <input type="submit" name="action" id="ping" value="PING">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="newcard" value="NEW CARD">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="activate" value="ACTIVATE CARD">
+        &nbsp;Card #:&nbsp;
+        <input type="text" id="cardnum" th:field="*{cardnum}"/>
+        &nbsp;Card Code:&nbsp;
+        <input type="text" id="cardcode" th:field="*{cardcode}"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="neworder" value="NEW ORDER">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="pay" value="PAY">
+    </p>
+    <p>
+    <table id="msg" align="center" style="width:75%">
+      <tr>
+        <td>
+          <pre align="left" id="pre">
+          <span th:text="${message}"></span>
+          </pre>
+        </td>
+      </tr>
+    </table>
+    </p>
+    <br/>
+</form>
+<!-- END FORM SECTION -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>

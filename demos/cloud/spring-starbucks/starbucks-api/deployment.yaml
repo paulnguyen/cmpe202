@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-starbucks-api-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      name: spring-starbucks-api
+  replicas: 4 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        name: spring-starbucks-api
+    spec:
+      containers:
+      - name: spring-starbucks-api
+        image: paulnguyen/spring-starbucks-api:v3.1
+        env:
+        - name: MYSQL_HOST
+          value: "72.22.16.2"   
+        ports:
+        - containerPort: 8080
+

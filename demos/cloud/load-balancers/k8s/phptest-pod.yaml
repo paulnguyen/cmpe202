@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: phptest
+  namespace: default
+  labels:
+    name: phptest
+spec:
+  containers:
+    - image: paulnguyen/phptest
+      name: phptest
+      ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
