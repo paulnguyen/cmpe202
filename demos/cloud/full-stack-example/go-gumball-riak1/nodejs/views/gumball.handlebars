@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <title>Gumball Machine (NodeJS Version 5)</title>
+</head>
+
+<body>
+<h1 align="center">Welcome to the Gumball Machine - Node.js (Riak + MySQL Version)</h1>
+
+<!-- FORM SECTION -->
+<form name="gumballform" method="post" action="">
+
+<input type="hidden" name="state" id="state" value="{{state}}" />
+<input type="hidden" name="ts" id="ts" value="{{ts}}" />
+<input type="hidden" name="hash" id="hash" value="{{hash}}" />
+
+    <p>
+    <div align="center">
+
+<textarea name="message" cols="50" rows="15" readonly id="message">
+{{message}}
+</textarea>
+
+    </div>
+</p>
+    <p align="center"><img src="/images/giant-gumball-machine.jpg"  width="385" height="316"></p>
+
+    <p align="center">
+        <input type="submit" name="event" id="btnInsertQuarter" value="Insert Quarter">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="event" id="btnTurnCrank" value="Turn Crank">
+    </p>
+</form>
+<!-- END FORM SECTION -->
+
+</body>
+</html>

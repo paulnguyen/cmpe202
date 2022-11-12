@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deployment
+  namespace: gumball
+spec:
+  selector:
+    matchLabels:
+      name: mongo
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        name: mongo
+    spec:
+      containers:
+      - name: mongo
+        image: mongo:3.7
+        ports:
+        - containerPort: 27017
+

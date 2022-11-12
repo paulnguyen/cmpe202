@@ -1,0 +1,129 @@
+
+-- RabbitMQ Create Queue:  
+
+	Queue Name: gumball
+	Durable:	no
+
+	> docker exec -it rabbitmq bash 
+	> rabbitmqadmin declare queue name=gumball durable=false
+	> rabbitmqadmin list queues vhost name node messages 
+
+-- Gumball MongoDB Create Database
+
+	Database Name: cmpe281
+	Collection Name: gumball
+
+-- Gumball MongoDB Collection (Create Document)
+
+	> docker exec -it mongodb bash 
+	> mongo
+	
+	use cmpe281
+	show dbs
+
+	db.gumball.insert(
+	    { 
+	      Id: 1,
+	      CountGumballs: NumberInt(202),
+	      ModelNumber: 'M102988',
+	      SerialNumber: '1234998871109' 
+	    }
+	) ;
+
+-- Gumball MongoDB Collection - Find Gumball Document
+
+	db.gumball.find( { Id: 1 } ) ;
+	
+-- Setup Riak Bucket
+
+	riak ping
+	riak-admin test
+	riak-admin bucket-type create gumball '{"props":{"search_index":"orders"}}'
+	riak-admin bucket-type activate gumball	
+	
+-- Create Database Schema (DB User: root, DB Pass: cmpe281)
+
+	create database cmpe281 ;
+	use cmpe281 ;
+
+	CREATE TABLE gumball (
+	  id bigint(20) NOT NULL AUTO_INCREMENT,
+	  version bigint(20) NOT NULL,
+	  count_gumballs int(11) NOT NULL,
+	  model_number varchar(255) NOT NULL,
+	  serial_number varchar(255) NOT NULL,
+	  PRIMARY KEY (id),
+	  UNIQUE KEY serial_number (serial_number)
+	) ;
+
+	insert into gumball ( id, version, count_gumballs, model_number, serial_number ) 
+	values ( 1, 0, 1000, 'M102988', '1234998871109' ) ;
+
+	select * from gumball ;
+
+	-- Grant Remote Access for Admin (Optional)
+
+	CREATE USER 'admin' IDENTIFIED BY 'cmpe281';
+
+	GRANT ALL PRIVILEGES
+	ON *.*
+	TO 'admin'@'%'
+	IDENTIFIED BY 'cmpe281';
+	
+	
+-- Install Curl in your "Jump Box"
+
+	sudo yum install curl
+	sudo yum check-update
+	
+	sudo apt-get update
+	sudo apt-get install curl
+	sudo apt-get install iputils-ping
+	
+	
+-- Install Redis Client in your "Jump Box"
+
+	sudo yum install gcc
+	sudo yum install wget
+	wget http://download.redis.io/redis-stable.tar.gz
+	tar xvzf redis-stable.tar.gz
+	cd redis-stable
+	make
+	src/redis-cli -h <host> -p 6379
+		
+-- Install Riak Client in your "Jump Box"
+
+	http://docs.basho.com/riak/kv/2.2.3/setup/installing/debian-ubuntu/
+	
+	apt-get -t sid install libc6 libc6-dev libc6-dbg
+	curl https://packagecloud.io/gpg.key | sudo apt-key add -
+	sudo apt-get install -y apt-transport-https
+	sudo apt-get update
+	sudo apt-get install riak
+			
+	
+-- Install MySQL in your "Jump Box"
+
+	sudo apt-get update
+	sudo apt-get install mysql-client 
+	
+	sudo yum install mysql
+	
+	mysql -u <user> -p -h <db host> <db name>
+
+
+-- Install Mongo in your "Jump Box"
+
+	https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+	https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+	sudo apt-get update
+	sudo apt-get install mongodb
+	
+	mongo <host>:<port>/<database> -u <username> -p <password>
+
+
+
+
+
+	

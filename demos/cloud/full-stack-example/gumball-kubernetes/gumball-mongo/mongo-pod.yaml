@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+  namespace: gumball
+  labels:
+    name: mongo
+spec:
+  containers:
+  - name: mongo
+    image:  mongo:3.7
+    ports:
+    - containerPort: 27017
+

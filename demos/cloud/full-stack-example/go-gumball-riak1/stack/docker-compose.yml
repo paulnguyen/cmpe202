@@ -1,0 +1,96 @@
+version: "3"
+services:
+  nodejs:
+    image: nodejs
+    ports:
+      - 8080:8080   
+    networks:
+      - front       
+    restart: always
+    links:
+      - kong
+    depends_on:
+      - kong   
+  gumball:
+    image: gumball
+    networks:
+      - app 
+      - db   
+    restart: always
+    environment:
+      - MYSQL=root:cmpe281@tcp(mysql:3306)/cmpe281
+      - RIAK1=http://member_1:8098
+      - RIAK2=http://member_2:8098
+      - RIAK3=http://member_3:8098    
+    links:
+      - member
+      - mysql
+    depends_on:
+      - member   
+      - mysql 
+  mysql:
+    image: mysql:5.5
+    networks:
+      - db    
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=cmpe281   
+  cassandra:
+    image: cassandra:2.2
+    networks:
+      - front
+    restart: always
+  kong:
+    image: kong:0.9.9
+    ports:
+      - 8888:8000
+    networks:
+      - front
+      - app
+    restart: always
+    links:
+      - gumball
+      - cassandra
+    depends_on:
+      - gumball
+      - cassandra
+    environment:  
+      - KONG_DATABASE=cassandra
+      - KONG_CASSANDRA_CONTACT_POINTS=cassandra 
+      - KONG_PG_HOST=cassandra
+  coordinator:
+    image: basho/riak-kv
+    networks:
+      - db    
+    environment:
+      - CLUSTER_NAME=riakkv
+    labels:
+      - "com.basho.riak.cluster.name=riakkv"
+    volumes:
+      - schemas:/etc/riak/schemas
+  member:
+    image: basho/riak-kv
+    networks:
+      - db   
+    labels:
+      - "com.basho.riak.cluster.name=riakkv"
+    links:
+      - coordinator
+    depends_on:
+      - coordinator
+    environment:
+      - CLUSTER_NAME=riakkv
+      - COORDINATOR_NODE=coordinator
+
+volumes:
+  schemas:
+    external: false
+
+networks:
+  front:
+    driver: bridge
+  app:
+    driver: bridge
+  db:
+    driver: bridge
+

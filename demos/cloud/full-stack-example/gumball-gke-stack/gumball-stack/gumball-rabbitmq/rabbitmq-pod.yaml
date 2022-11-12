@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rabbitmq
+  namespace: gumball
+  labels:
+    name: rabbitmq
+spec:
+  containers:
+  - name: rabbitmq
+    image:  rabbitmq:3-management
+    ports:
+    - containerPort: 5672
+

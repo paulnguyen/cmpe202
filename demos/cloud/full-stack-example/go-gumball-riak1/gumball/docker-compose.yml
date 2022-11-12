@@ -1,0 +1,97 @@
+#   Docker Compose File
+# 
+#   * https://docs.docker.com/compose/reference/overview/
+#   * https://docs.docker.com/compose/compose-file/
+#   * https://docs.docker.com/compose/networking/
+#   * https://docs.docker.com/compose/startup-order/
+# 
+
+version: "3"
+services:
+  nodejs:
+    image: nodejs
+    networks:
+      - network   
+    ports:
+      - 8080:8080    
+    restart: always
+    depends_on:
+      - kong     
+  gumball:
+    image: gumball
+    networks:
+      - network    
+    ports:
+      - 3000-3001:3000
+    restart: always
+    environment:
+      - MYSQL=root:cmpe281@tcp(mysql:3306)/cmpe281
+      - RIAK1=http://gumball_member_1:8098
+      - RIAK2=http://gumball_member_2:8098
+      - RIAK3=http://gumball_member_3:8098
+    depends_on:
+      - member   
+      - mysql 
+  mysql:
+    image: mysql:5.5
+    networks:
+      - network    
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=cmpe281   
+  cassandra:
+    image: cassandra:2.2
+    networks:
+      - network   
+    restart: always    
+  kong:
+    image: kong:0.9.9
+    networks:
+      - network    
+    ports:
+      - 8888:8000
+      - 8001:8001
+    restart: always
+    depends_on:
+      - gumball
+      - cassandra
+    environment:  
+      - KONG_DATABASE=cassandra
+      - KONG_CASSANDRA_CONTACT_POINTS=cassandra 
+      - KONG_PG_HOST=cassandra
+  coordinator:
+    image: basho/riak-kv
+    networks:
+      - network    
+    ports:
+      - 8097:8087
+      - 8098:8098
+    environment:
+      - CLUSTER_NAME=riakkv
+    labels:
+      - "com.basho.riak.cluster.name=riakkv"
+    volumes:
+      - schemas:/etc/riak/schemas
+  member:
+    image: basho/riak-kv
+    networks:
+      - network   
+    ports:
+      - 7000-7003:8098
+    labels:
+      - "com.basho.riak.cluster.name=riakkv"
+    depends_on:
+      - coordinator
+    environment:
+      - CLUSTER_NAME=riakkv
+      - COORDINATOR_NODE=coordinator
+
+volumes:
+  schemas:
+    external: false
+
+networks:
+  network:
+    driver: bridge

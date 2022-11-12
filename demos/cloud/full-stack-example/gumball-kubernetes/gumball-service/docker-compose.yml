@@ -1,0 +1,19 @@
+
+version: "3"
+services:
+  gumball:
+    image: paulnguyen/gumball:gumball-v2.0
+    ports:
+      - "9000:3000"
+    networks:
+      - webnet
+  rabbitmq:
+    image: rabbitmq:3-management
+    networks:
+      - webnet
+  mongodb:
+    image: mongo:3.7
+    networks:
+      - webnet
+networks:
+  webnet:

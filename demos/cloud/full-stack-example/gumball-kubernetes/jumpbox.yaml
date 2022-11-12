@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jumpbox
+spec:
+  containers:
+  - name: jumpbox
+    image: ubuntu
+    imagePullPolicy: Always
+    command:
+    - sleep
+    - "3600"

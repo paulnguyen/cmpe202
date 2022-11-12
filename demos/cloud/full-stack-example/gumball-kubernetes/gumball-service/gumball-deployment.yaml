@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gumball-deployment
+  namespace: gumball
+spec:
+  selector:
+    matchLabels:
+      name: gumball
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        name: gumball
+    spec:
+      containers:
+      - name: gumball
+        image: paulnguyen/gumball:gumball-pod
+        ports:
+        - containerPort: 3000
+

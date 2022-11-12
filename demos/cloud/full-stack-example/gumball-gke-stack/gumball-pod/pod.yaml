@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gumball
+  namespace: default
+  labels:
+    name: gumball
+spec:
+  containers:
+    - image: paulnguyen/gumball:gumball-pod
+      name: gumball
+      ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP

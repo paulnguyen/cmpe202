@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gumball
+  namespace: gumball
+  labels:
+    name: gumball
+spec:
+  containers:
+  - name: gumball
+    image: paulnguyen/gumball:gumball-mysql-pod
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 3000
+      name: http
+      protocol: TCP

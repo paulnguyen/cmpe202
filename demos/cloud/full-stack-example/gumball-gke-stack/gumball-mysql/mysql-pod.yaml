@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql
+  namespace: gumball
+  labels:
+    name: mysql
+spec:
+  containers:
+    - name: mysql
+      image: mysql:5.5
+      env:
+        - name: "MYSQL_USER"
+          value: "admin"
+        - name: "MYSQL_PASSWORD"
+          value: "cmpe281"
+        - name: "MYSQL_DATABASE"
+          value: "cmpe281"
+        - name: "MYSQL_ROOT_PASSWORD"
+          value: "cmpe281"
+      ports:
+        - containerPort: 3306
